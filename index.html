@@ -1,1723 +1,1965 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr" data-theme="dark">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Digital Marketing Specialist, WordPress Web Developer & Graphic Designer -7+ years in the UAE.">
-<title>NEDLSALAH - Digital Marketing · Web Development · Design</title>
-<link rel="apple-touch-icon" sizes="180x180" href="./img/favicon/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="./img/favicon/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="./img/favicon/favicon-16x16.png">
-<link rel="manifest" href="/site.webmanifest">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/inter@5.0.16/index.css">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/space-grotesk@5.0.18/index.css">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&display=swap" rel="stylesheet">
-<script>(function(){try{var t=localStorage.getItem('site-theme')||'dark';document.documentElement.setAttribute('data-theme',t);}catch(e){document.documentElement.setAttribute('data-theme','dark');}})();</script>
-<style>
-/* ─────────────────────────────────────────────
-PROTECTION LAYER
-───────────────────────────────────────────── */
-html, body {
--webkit-user-select: none;
--moz-user-select: none;
--ms-user-select: none;
-user-select: none;
-}
-::selection {
-background: transparent !important;
-color: transparent !important;
-}
-::-moz-selection {
-background: transparent !important;
-color: transparent !important;
-}
-body {
--webkit-touch-callout: none;
-}
-/* ─────────────────────────────────────────────
-LIQUID GLASS DESIGN SYSTEM 2025
-───────────────────────────────────────────── */
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="NEDLSALAH — Digital Marketing Specialist, WordPress Web Developer & Graphic Designer. 7+ years in the UAE.">
+  <meta name="author" content="NEDLSALAH">
+  <meta name="theme-color" content="#050508">
+  <meta property="og:title" content="NEDLSALAH — Digital Marketing · Web · Design">
+  <meta property="og:description" content="Digital Marketing Specialist, WordPress Web Developer & Graphic Designer — 7+ years experience in the UAE.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="./img/me.jpg">
+  <title>NEDLSALAH — Digital Marketing · Web Development · Design</title>
+  <link rel="apple-touch-icon" sizes="180x180" href="./img/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon/favicon-16x16.png">
+  <link rel="manifest" href="./img/favicon/site.webmanifest">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&family=Outfit:wght@300;400;500;600;700;800&family=Syne:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+  <style>
+/* ═══════════════════════════════════════════════════════════
+   NEDLSALAH — Premium 2026 Personal Brand
+   Design tokens · Liquid glass · Bilingual · Themes
+═══════════════════════════════════════════════════════════ */
 :root {
---bg-primary: #050508;
---bg-secondary: #0a0a0f;
---bg-tertiary: #101018;
---bg-elevated: #151520;
---glass-bg: rgba(255, 255, 255, 0.03);
---glass-bg-hover: rgba(255, 255, 255, 0.06);
---glass-border: rgba(255, 255, 255, 0.08);
---glass-border-strong: rgba(255, 255, 255, 0.15);
---glass-highlight: rgba(255, 255, 255, 0.12);
---accent: #00d4ff;
---accent-glow: rgba(0, 212, 255, 0.4);
---accent-dim: rgba(0, 212, 255, 0.1);
---text-primary: #ffffff;
---text-secondary: rgba(255, 255, 255, 0.7);
---text-tertiary: rgba(255, 255, 255, 0.5);
---text-muted: rgba(255, 255, 255, 0.35);
---font-display: 'Space Grotesk', system-ui, sans-serif;
---font-body: 'Inter', system-ui, sans-serif;
---container-padding: clamp(1.5rem, 8vw, 6rem);
---space-xs: 0.5rem;
---space-sm: 1rem;
---space-md: 1.5rem;
---space-lg: 2.5rem;
---space-xl: 4rem;
---space-2xl: 6rem;
---space-3xl: 8rem;
---blur-sm: blur(8px);
---blur-md: blur(20px);
---blur-lg: blur(40px);
---blur-xl: blur(80px);
---ease-smooth: cubic-bezier(0.4, 0, 0.2, 1);
---ease-bounce: cubic-bezier(0.68, -0.15, 0.265, 1.15);
---ease-liquid: cubic-bezier(0.23, 1, 0.32, 1);
+  --accent: #0792B1;
+  --accent-rgb: 7, 146, 177;
+  --accent-soft: rgba(7, 146, 177, 0.15);
+  --accent-glow: rgba(7, 146, 177, 0.35);
+  --font-display: "Syne", system-ui, sans-serif;
+  --font-body: "Outfit", system-ui, sans-serif;
+  --font-arabic: "IBM Plex Sans Arabic", "Outfit", system-ui, sans-serif;
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-liquid: cubic-bezier(0.4, 0, 0.2, 1);
+  --nav-h: 4.5rem;
+  --container: 1280px;
+  --radius: 1.25rem;
+  --radius-sm: 0.75rem;
+  --radius-pill: 999px;
+  --blur: 20px;
+  --blur-lg: 32px;
 }
-*, *::before, *::after {
-margin: 0;
-padding: 0;
-box-sizing: border-box;
+
+/* Dark (default) */
+[data-theme="dark"] {
+  --bg: #050508;
+  --bg-elevated: #0c0c12;
+  --bg-surface: #111118;
+  --bg-card: rgba(255, 255, 255, 0.03);
+  --bg-card-hover: rgba(255, 255, 255, 0.06);
+  --border: rgba(255, 255, 255, 0.08);
+  --border-strong: rgba(255, 255, 255, 0.14);
+  --text: #f4f4f5;
+  --text-secondary: #a1a1aa;
+  --text-muted: #71717a;
+  --shadow: 0 24px 64px rgba(0, 0, 0, 0.45);
+  --glass: rgba(12, 12, 18, 0.72);
+  --glass-border: rgba(255, 255, 255, 0.1);
+  --noise-opacity: 0.035;
+  --scroll-track: #0c0c12;
+  --cursor-ring: rgba(7, 146, 177, 0.5);
 }
+
+/* Light */
+[data-theme="light"] {
+  --bg: #f8f9fb;
+  --bg-elevated: #ffffff;
+  --bg-surface: #f1f3f6;
+  --bg-card: rgba(255, 255, 255, 0.7);
+  --bg-card-hover: rgba(255, 255, 255, 0.95);
+  --border: rgba(0, 0, 0, 0.08);
+  --border-strong: rgba(0, 0, 0, 0.14);
+  --text: #0a0a0f;
+  --text-secondary: #52525b;
+  --text-muted: #71717a;
+  --shadow: 0 20px 50px rgba(0, 0, 0, 0.08);
+  --glass: rgba(255, 255, 255, 0.78);
+  --glass-border: rgba(0, 0, 0, 0.08);
+  --noise-opacity: 0.02;
+  --scroll-track: #e4e4e7;
+  --cursor-ring: rgba(7, 146, 177, 0.4);
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 html {
-scroll-behavior: smooth;
-font-size: 16px;
-background: var(--bg-primary);
+  scroll-behavior: smooth;
+  font-size: 16px;
+  -webkit-text-size-adjust: 100%;
 }
+html[dir="rtl"] { font-family: var(--font-arabic); }
 body {
-font-family: var(--font-body);
-background: var(--bg-primary);
-color: var(--text-primary);
-line-height: 1.6;
-overflow-x: hidden;
--webkit-font-smoothing: antialiased;
--moz-osx-font-smoothing: grayscale;
+  font-family: var(--font-body);
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+  overflow-x: hidden;
+  transition: background 0.45s var(--ease-liquid), color 0.45s var(--ease-liquid);
+  min-height: 100vh;
 }
+html[dir="rtl"] body { font-family: var(--font-arabic); }
+
+/* Noise overlay */
 body::before {
-content: '';
-position: fixed;
-inset: 0;
-z-index: -2;
-background:
-radial-gradient(ellipse 80% 50% at 20% 40%, rgba(0, 212, 255, 0.08), transparent),
-radial-gradient(ellipse 60% 40% at 80% 60%, rgba(124, 58, 237, 0.06), transparent),
-radial-gradient(ellipse 50% 30% at 50% 100%, rgba(244, 114, 182, 0.05), transparent);
-animation: meshMove 20s ease-in-out infinite;
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: 9998;
+  pointer-events: none;
+  opacity: var(--noise-opacity);
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
 }
-@keyframes meshMove {
-0%, 100% { transform: translate(0, 0) scale(1); }
-33% { transform: translate(2%, -2%) scale(1.02); }
-66% { transform: translate(-1%, 1%) scale(0.98); }
+
+/* Custom cursor (desktop) */
+.cursor-dot, .cursor-ring {
+  position: fixed;
+  top: 0; left: 0;
+  pointer-events: none;
+  z-index: 10000;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  transition: opacity 0.3s, width 0.25s, height 0.25s, background 0.25s;
 }
-body::after {
-content: '';
-position: fixed;
-inset: 0;
-z-index: 9999;
-pointer-events: none;
-opacity: 0.03;
-background-image: url("image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+.cursor-dot {
+  width: 6px; height: 6px;
+  background: var(--accent);
+  mix-blend-mode: difference;
 }
-::-webkit-scrollbar {
-width: 6px;
+.cursor-ring {
+  width: 36px; height: 36px;
+  border: 1.5px solid var(--cursor-ring);
+  transition: width 0.3s var(--ease-out), height 0.3s var(--ease-out), border-color 0.3s, opacity 0.3s;
 }
-::-webkit-scrollbar-track {
-background: var(--bg-secondary);
+.cursor-ring.hover {
+  width: 56px; height: 56px;
+  border-color: var(--accent);
 }
-::-webkit-scrollbar-thumb {
-background: var(--glass-border-strong);
-border-radius: 3px;
+body.touch-device .cursor-dot,
+body.touch-device .cursor-ring { display: none !important; }
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--scroll-track); }
+::-webkit-scrollbar-thumb { background: var(--border-strong); border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: var(--accent); }
+
+/* Selection */
+::selection { background: var(--accent-soft); color: var(--text); }
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
 }
-::-webkit-scrollbar-thumb:hover {
-background: var(--accent);
-}
+
+a { color: inherit; text-decoration: none; }
+img { max-width: 100%; height: auto; display: block; }
+button { font-family: inherit; cursor: pointer; border: none; background: none; color: inherit; }
+ul { list-style: none; }
+
 .container {
-max-width: 1400px;
-margin: 0 auto;
-padding: 0 var(--container-padding);
+  width: 100%;
+  max-width: var(--container);
+  margin: 0 auto;
+  padding: 0 1.5rem;
 }
-/* ─────────────────────────────────────────────
-NAVIGATION
-───────────────────────────────────────────── */
+@media (min-width: 768px) { .container { padding: 0 2rem; } }
+@media (min-width: 1280px) { .container { padding: 0 2.5rem; } }
+
+/* ─── NAV ─── */
 .nav {
-position: fixed;
-top: 1.5rem;
-left: 50%;
-transform: translateX(-50%);
-z-index: 1000;
-width: calc(100% - var(--container-padding) * 2);
-max-width: 1200px;
+  position: fixed;
+  top: 1.25rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000;
+  width: calc(100% - 2rem);
+  max-width: 1100px;
 }
 .nav-inner {
-display: flex;
-align-items: center;
-justify-content: space-between;
-padding: 0.875rem 1.5rem;
-border-radius: 100px;
-background: rgba(10, 10, 15, 0.7);
-backdrop-filter: var(--blur-lg) saturate(200%);
--webkit-backdrop-filter: var(--blur-lg) saturate(200%);
-border: 1px solid var(--glass-border);
-box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4), inset 0 1px 0 rgba(255, 255, 255, 0.1);
-transition: all 0.4s var(--ease-liquid);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.65rem 1rem 0.65rem 1.35rem;
+  border-radius: var(--radius-pill);
+  background: var(--glass);
+  backdrop-filter: blur(var(--blur-lg)) saturate(180%);
+  -webkit-backdrop-filter: blur(var(--blur-lg)) saturate(180%);
+  border: 1px solid var(--glass-border);
+  box-shadow: var(--shadow);
+  transition: border-color 0.35s, box-shadow 0.35s;
 }
-.nav-inner:hover {
-border-color: var(--glass-border-strong);
-box-shadow: 0 12px 40px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(0, 212, 255, 0.1), inset 0 1px 0 rgba(255, 255, 255, 0.15);
-}
+.nav-inner:hover { border-color: var(--border-strong); }
 .nav-logo {
-font-family: var(--font-display);
-font-size: 1.25rem;
-font-weight: 700;
-letter-spacing: -0.02em;
-color: var(--text-primary);
-text-decoration: none;
-display: flex;
-align-items: center;
-gap: 0.5rem;
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 1.05rem;
+  letter-spacing: -0.03em;
+  color: var(--text);
+  white-space: nowrap;
 }
-.nav-menu {
-display: flex;
-gap: 0.5rem;
-list-style: none;
+.nav-logo span { color: var(--accent); }
+.nav-links {
+  display: none;
+  align-items: center;
+  gap: 0.15rem;
 }
-.nav-menu a {
-font-size: 0.8125rem;
-font-weight: 500;
-color: var(--text-secondary);
-text-decoration: none;
-padding: 0.5rem 1rem;
-border-radius: 100px;
-transition: all 0.3s var(--ease-smooth);
-position: relative;
+@media (min-width: 900px) { .nav-links { display: flex; } }
+.nav-links a {
+  font-size: 0.8125rem;
+  font-weight: 500;
+  color: var(--text-secondary);
+  padding: 0.45rem 0.85rem;
+  border-radius: var(--radius-pill);
+  transition: color 0.25s, background 0.25s;
 }
-.nav-menu a::before {
-content: '';
-position: absolute;
-inset: 0;
-background: var(--glass-bg-hover);
-border-radius: 100px;
-opacity: 0;
-transform: scale(0.8);
-transition: all 0.3s var(--ease-smooth);
+.nav-links a:hover,
+.nav-links a.active {
+  color: var(--text);
+  background: var(--bg-card-hover);
 }
-.nav-menu a:hover {
-color: var(--text-primary);
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
 }
-.nav-menu a:hover::before {
-opacity: 1;
-transform: scale(1);
+.nav-btn {
+  width: 2.35rem;
+  height: 2.35rem;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  color: var(--text-secondary);
+  transition: color 0.25s, background 0.25s, transform 0.25s;
 }
-.nav-menu a.active {
-color: var(--accent);
-background: var(--accent-dim);
+.nav-btn:hover {
+  color: var(--text);
+  background: var(--bg-card-hover);
 }
+.nav-btn:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+.lang-switch {
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  padding: 0.4rem 0.75rem;
+  border-radius: var(--radius-pill);
+  color: var(--text-secondary);
+  border: 1px solid var(--border);
+  transition: all 0.25s;
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+.lang-switch:hover {
+  color: var(--text);
+  border-color: var(--border-strong);
+  background: var(--bg-card-hover);
+}
+.lang-switch .sep { opacity: 0.4; }
+.lang-switch .active-lang { color: var(--accent); }
 .hamburger {
-display: none;
-flex-direction: column;
-gap: 4px;
-background: none;
-border: none;
-cursor: pointer;
-padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  width: 2.35rem;
+  height: 2.35rem;
+  padding: 0.5rem;
 }
+@media (min-width: 900px) { .hamburger { display: none; } }
 .hamburger span {
-display: block;
-width: 20px;
-height: 2px;
-background: var(--text-primary);
-border-radius: 2px;
-transition: all 0.3s var(--ease-smooth);
+  display: block;
+  height: 1.5px;
+  width: 100%;
+  background: var(--text);
+  border-radius: 2px;
+  transition: transform 0.3s, opacity 0.3s;
 }
-/* ─────────────────────────────────────────────
-HERO SECTION
-───────────────────────────────────────────── */
-#hero {
-min-height: 100vh;
-display: flex;
-align-items: center;
-position: relative;
-padding: 8rem 0 4rem;
-overflow: hidden;
+.hamburger.active span:nth-child(1) { transform: translateY(6.5px) rotate(45deg); }
+.hamburger.active span:nth-child(2) { opacity: 0; }
+.hamburger.active span:nth-child(3) { transform: translateY(-6.5px) rotate(-45deg); }
+
+/* Mobile menu */
+.mobile-menu {
+  position: fixed;
+  inset: 0;
+  z-index: 999;
+  background: var(--bg);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.35s, visibility 0.35s;
 }
-.orb {
-position: absolute;
-border-radius: 50%;
-filter: var(--blur-xl);
-pointer-events: none;
-opacity: 0.6;
+.mobile-menu.open {
+  opacity: 1;
+  visibility: visible;
 }
-.orb-1 {
-width: 600px;
-height: 600px;
-background: radial-gradient(circle, var(--accent-glow) 0%, transparent 70%);
-top: -200px;
-right: -100px;
-animation: floatOrb1 15s ease-in-out infinite;
+.mobile-menu a {
+  font-family: var(--font-display);
+  font-size: 1.75rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  transition: color 0.25s;
 }
-.orb-2 {
-width: 400px;
-height: 400px;
-background: radial-gradient(circle, rgba(124, 58, 237, 0.3) 0%, transparent 70%);
-bottom: -100px;
-left: -100px;
-animation: floatOrb2 18s ease-in-out infinite;
+.mobile-menu a:hover { color: var(--accent); }
+
+/* ─── SCROLL PROGRESS ─── */
+.scroll-progress {
+  position: fixed;
+  top: 0; left: 0;
+  height: 2px;
+  width: 0%;
+  background: var(--accent);
+  z-index: 10001;
+  transform-origin: left;
+  transition: width 0.1s linear;
 }
-.orb-3 {
-width: 300px;
-height: 300px;
-background: radial-gradient(circle, rgba(244, 114, 182, 0.2) 0%, transparent 70%);
-top: 50%;
-right: 20%;
-animation: floatOrb3 12s ease-in-out infinite;
+html[dir="rtl"] .scroll-progress { transform-origin: right; }
+
+/* ─── HERO ─── */
+.hero {
+  min-height: 100vh;
+  min-height: 100dvh;
+  display: flex;
+  align-items: center;
+  padding: 7rem 0 4rem;
+  position: relative;
+  overflow: hidden;
 }
-@keyframes floatOrb1 {
-0%, 100% { transform: translate(0, 0) scale(1); }
-50% { transform: translate(-30px, 30px) scale(1.1); }
+.hero-bg {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  overflow: hidden;
 }
-@keyframes floatOrb2 {
-0%, 100% { transform: translate(0, 0) scale(1); }
-50% { transform: translate(40px, -20px) scale(0.95); }
+.hero-orb {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(80px);
+  opacity: 0.45;
+  will-change: transform;
 }
-@keyframes floatOrb3 {
-0%, 100% { transform: translate(0, 0) scale(1); }
-50% { transform: translate(-20px, -40px) scale(1.05); }
+.hero-orb-1 {
+  width: 420px; height: 420px;
+  background: radial-gradient(circle, rgba(7,146,177,0.5) 0%, transparent 70%);
+  top: -10%; right: -5%;
+}
+.hero-orb-2 {
+  width: 320px; height: 320px;
+  background: radial-gradient(circle, rgba(7,146,177,0.25) 0%, transparent 70%);
+  bottom: 10%; left: -8%;
 }
 .hero-grid {
-display: grid;
-grid-template-columns: 1fr 1fr;
-gap: 4rem;
-align-items: center;
+  display: grid;
+  gap: 3rem;
+  align-items: center;
 }
-.hero-content {
-position: relative;
-z-index: 1;
+@media (min-width: 960px) {
+  .hero-grid {
+    grid-template-columns: 1.15fr 0.85fr;
+    gap: 4rem;
+  }
 }
+html[dir="rtl"] .hero-grid { direction: rtl; }
 .hero-badge {
-display: inline-flex;
-align-items: center;
-gap: 0.5rem;
-padding: 0.5rem 1rem;
-background: var(--accent-dim);
-border: 1px solid rgba(0, 212, 255, 0.2);
-border-radius: 100px;
-font-size: 0.75rem;
-font-weight: 600;
-text-transform: uppercase;
-letter-spacing: 0.1em;
-color: var(--accent);
-margin-bottom: 2rem;
-animation: fadeInUp 0.8s var(--ease-liquid) forwards;
-opacity: 0;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--accent);
+  background: var(--accent-soft);
+  border: 1px solid rgba(7,146,177,0.25);
+  padding: 0.4rem 0.9rem;
+  border-radius: var(--radius-pill);
+  margin-bottom: 1.5rem;
 }
-.hero-badge::before {
-content: '';
-width: 6px;
-height: 6px;
-background: var(--accent);
-border-radius: 50%;
-animation: blink 2s infinite;
+.hero-badge .dot {
+  width: 6px; height: 6px;
+  background: var(--accent);
+  border-radius: 50%;
+  animation: pulse 2s ease infinite;
+}
+@keyframes pulse {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.5; transform: scale(0.85); }
+}
+.hero-h1 {
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: clamp(2.4rem, 6vw, 4.25rem);
+  line-height: 1.08;
+  letter-spacing: -0.035em;
+  color: var(--text);
+  margin-bottom: 0.75rem;
+}
+.hero-typed-wrap {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: clamp(1.15rem, 2.8vw, 1.65rem);
+  color: var(--accent);
+  min-height: 1.6em;
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.15rem;
+}
+.hero-typed { display: inline; }
+.typed-cursor {
+  display: inline-block;
+  width: 2px;
+  height: 1.1em;
+  background: var(--accent);
+  animation: blink 1s step-end infinite;
+  vertical-align: text-bottom;
 }
 @keyframes blink {
-0%, 100% { opacity: 1; }
-50% { opacity: 0.3; }
+  50% { opacity: 0; }
 }
-@keyframes fadeInUp {
-from { opacity: 0; transform: translateY(30px); }
-to { opacity: 1; transform: translateY(0); }
+.hero-lead {
+  font-size: clamp(1rem, 1.6vw, 1.125rem);
+  color: var(--text-secondary);
+  max-width: 34rem;
+  line-height: 1.7;
+  margin-bottom: 2.25rem;
 }
-.hero-title {
-font-family: var(--font-display);
-font-size: clamp(3rem, 8vw, 6rem);
-font-weight: 700;
-line-height: 1.05;
-letter-spacing: -0.03em;
-margin-bottom: 1.5rem;
-color: var(--text-primary);
-}
-.hero-title .line {
-display: block;
-animation: fadeInUp 0.8s var(--ease-liquid) forwards;
-opacity: 0;
-}
-.hero-title .line:nth-child(1) { animation-delay: 0.1s; }
-.hero-title .line:nth-child(2) { animation-delay: 0.2s; color: var(--accent); }
-.hero-subtitle {
-font-size: 1.125rem;
-color: var(--text-secondary);
-margin-bottom: 2rem;
-max-width: 500px;
-animation: fadeInUp 0.8s var(--ease-liquid) 0.3s forwards;
-opacity: 0;
-}
-.hero-typed {
-font-family: var(--font-display);
-font-size: 1.25rem;
-color: var(--accent);
-margin-bottom: 2.5rem;
-min-height: 2rem;
-animation: fadeInUp 0.8s var(--ease-liquid) 0.4s forwards;
-opacity: 0;
-}
-.hero-typed .cursor {
-display: inline-block;
-width: 2px;
-height: 1.2em;
-background: var(--accent);
-margin-left: 4px;
-animation: cursorBlink 1s infinite;
-vertical-align: middle;
-}
-@keyframes cursorBlink {
-0%, 100% { opacity: 1; }
-50% { opacity: 0; }
-}
-.hero-actions {
-display: flex;
-gap: 1rem;
-margin-bottom: 3rem;
-animation: fadeInUp 0.8s var(--ease-liquid) 0.5s forwards;
-opacity: 0;
+.hero-cta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.85rem;
+  margin-bottom: 2.5rem;
 }
 .btn {
-display: inline-flex;
-align-items: center;
-gap: 0.5rem;
-padding: 1rem 2rem;
-font-size: 0.875rem;
-font-weight: 600;
-text-decoration: none;
-border-radius: 100px;
-transition: all 0.3s var(--ease-smooth);
-position: relative;
-overflow: hidden;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  padding: 0.85rem 1.5rem;
+  border-radius: var(--radius-pill);
+  transition: transform 0.3s var(--ease-out), background 0.3s, color 0.3s, box-shadow 0.3s, border-color 0.3s;
+  will-change: transform;
 }
 .btn-primary {
-background: var(--accent);
-color: var(--bg-primary);
-border: none;
-box-shadow: 0 4px 20px rgba(0, 212, 255, 0.3);
+  background: var(--accent);
+  color: #fff;
+  box-shadow: 0 8px 24px var(--accent-glow);
 }
 .btn-primary:hover {
-transform: translateY(-2px);
-box-shadow: 0 8px 30px rgba(0, 212, 255, 0.4);
+  transform: translateY(-2px);
+  box-shadow: 0 12px 32px var(--accent-glow);
 }
-.btn-secondary {
-background: var(--glass-bg);
-color: var(--text-primary);
-border: 1px solid var(--glass-border);
-backdrop-filter: var(--blur-sm);
+.btn-ghost {
+  background: transparent;
+  color: var(--text);
+  border: 1px solid var(--border-strong);
 }
-.btn-secondary:hover {
-background: var(--glass-bg-hover);
-border-color: var(--glass-border-strong);
-transform: translateY(-2px);
+.btn-ghost:hover {
+  background: var(--bg-card-hover);
+  border-color: var(--text-muted);
 }
-.hero-socials {
-display: flex;
-gap: 1rem;
-animation: fadeInUp 0.8s var(--ease-liquid) 0.6s forwards;
-opacity: 0;
+.hero-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem 2rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--border);
 }
-.social-link {
-width: 44px;
-height: 44px;
-display: flex;
-align-items: center;
-justify-content: center;
-background: var(--glass-bg);
-border: 1px solid var(--glass-border);
-border-radius: 50%;
-color: var(--text-secondary);
-font-size: 1rem;
-text-decoration: none;
-transition: all 0.3s var(--ease-smooth);
+.hero-meta-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
 }
-.social-link:hover {
-background: var(--glass-bg-hover);
-border-color: var(--accent);
-color: var(--accent);
-transform: translateY(-3px);
-box-shadow: 0 8px 20px rgba(0, 212, 255, 0.2);
+.hero-meta-item strong {
+  font-family: var(--font-display);
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: var(--text);
+  letter-spacing: -0.02em;
+}
+.hero-meta-item span {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
 }
 .hero-visual {
-position: relative;
-display: flex;
-justify-content: center;
-align-items: center;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.glass-sphere {
-width: 400px;
-height: 400px;
-position: relative;
-animation: floatSphere 6s ease-in-out infinite;
+.hero-portrait-wrap {
+  position: relative;
+  width: min(100%, 380px);
+  aspect-ratio: 1;
+  border-radius: 2rem;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow);
+  background: var(--bg-surface);
 }
-@keyframes floatSphere {
-0%, 100% { transform: translateY(0); }
-50% { transform: translateY(-20px); }
+.hero-portrait-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+  transition: transform 0.6s var(--ease-out);
 }
-.sphere-inner {
-width: 100%;
-height: 100%;
-border-radius: 50%;
-background:
-radial-gradient(circle at 30% 30%, rgba(255, 255, 255, 0.2) 0%, transparent 50%),
-radial-gradient(circle at 70% 70%, var(--accent-glow) 0%, transparent 60%),
-linear-gradient(135deg, rgba(0, 212, 255, 0.1) 0%, rgba(124, 58, 237, 0.1) 100%);
-backdrop-filter: var(--blur-lg);
-border: 1px solid var(--glass-border);
-box-shadow:
-inset 0 0 60px rgba(255, 255, 255, 0.1),
-0 0 80px rgba(0, 212, 255, 0.2),
-0 0 120px rgba(124, 58, 237, 0.1);
-position: relative;
-overflow: hidden;
+.hero-portrait-wrap:hover img { transform: scale(1.04); }
+.hero-portrait-glow {
+  position: absolute;
+  inset: -20%;
+  background: radial-gradient(circle at 50% 30%, rgba(7,146,177,0.25), transparent 60%);
+  pointer-events: none;
+  z-index: -1;
 }
-.sphere-inner::before {
-content: '';
-position: absolute;
-top: 10%;
-left: 20%;
-width: 30%;
-height: 20%;
-background: radial-gradient(ellipse, rgba(255, 255, 255, 0.4) 0%, transparent 70%);
-filter: blur(10px);
+.hero-float {
+  position: absolute;
+  padding: 0.65rem 1rem;
+  border-radius: var(--radius-sm);
+  background: var(--glass);
+  backdrop-filter: blur(var(--blur));
+  border: 1px solid var(--glass-border);
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: var(--text);
+  box-shadow: var(--shadow);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  white-space: nowrap;
 }
-/* ─────────────────────────────────────────────
-SECTIONS BASE
-───────────────────────────────────────────── */
+.hero-float i { color: var(--accent); }
+.hero-float-1 { top: 8%; left: -4%; }
+.hero-float-2 { bottom: 12%; right: -6%; }
+@media (max-width: 959px) {
+  .hero-float-1 { left: 4%; }
+  .hero-float-2 { right: 4%; }
+}
+
+/* ─── SECTIONS COMMON ─── */
 section {
-padding: var(--space-3xl) 0;
-position: relative;
-}
-.section-header {
-text-align: center;
-margin-bottom: var(--space-2xl);
+  padding: 5.5rem 0;
+  position: relative;
 }
 .section-eyebrow {
-display: inline-flex;
-align-items: center;
-gap: 0.5rem;
-font-size: 0.75rem;
-font-weight: 600;
-text-transform: uppercase;
-letter-spacing: 0.15em;
-color: var(--accent);
-margin-bottom: 1rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 0.75rem;
 }
 .section-title {
-font-family: var(--font-display);
-font-size: clamp(2rem, 5vw, 3.5rem);
-font-weight: 700;
-letter-spacing: -0.02em;
-margin-bottom: 1rem;
-color: var(--text-primary);
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: clamp(1.85rem, 4vw, 2.75rem);
+  letter-spacing: -0.03em;
+  line-height: 1.15;
+  margin-bottom: 0.85rem;
 }
 .section-title span { color: var(--accent); }
 .section-desc {
-font-size: 1.125rem;
-color: var(--text-secondary);
-max-width: 600px;
-margin: 0 auto;
+  font-size: 1.05rem;
+  color: var(--text-secondary);
+  max-width: 36rem;
+  line-height: 1.7;
 }
-/* ─────────────────────────────────────────────
-SERVICES
-───────────────────────────────────────────── */
-#services { background: var(--bg-secondary); }
+.section-header { margin-bottom: 3rem; }
+
+/* ─── SERVICES ─── */
 .services-grid {
-display: grid;
-grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-gap: 1.5rem;
+  display: grid;
+  gap: 1.25rem;
+}
+@media (min-width: 640px) {
+  .services-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (min-width: 1024px) {
+  .services-grid { grid-template-columns: repeat(3, 1fr); }
 }
 .service-card {
-padding: 2.5rem;
-border-radius: 24px;
-background: var(--glass-bg);
-backdrop-filter: var(--blur-md);
-border: 1px solid var(--glass-border);
-transition: all 0.4s var(--ease-liquid);
-position: relative;
-overflow: hidden;
+  position: relative;
+  padding: 1.75rem;
+  border-radius: var(--radius);
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  transition: transform 0.4s var(--ease-out), border-color 0.35s, background 0.35s, box-shadow 0.4s;
+  overflow: hidden;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 .service-card::before {
-content: '';
-position: absolute;
-inset: 0;
-background: linear-gradient(135deg, rgba(0, 212, 255, 0.05) 0%, transparent 50%);
-opacity: 0;
-transition: opacity 0.4s;
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(600px circle at var(--mouse-x, 50%) var(--mouse-y, 50%), var(--accent-soft), transparent 40%);
+  opacity: 0;
+  transition: opacity 0.4s;
+  pointer-events: none;
 }
 .service-card:hover {
-transform: translateY(-8px);
-border-color: var(--accent);
-box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3), 0 0 0 1px rgba(0, 212, 255, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.1);
+  border-color: var(--border-strong);
+  background: var(--bg-card-hover);
+  box-shadow: var(--shadow);
+  transform: translateY(-4px);
 }
 .service-card:hover::before { opacity: 1; }
+.service-num {
+  font-family: var(--font-display);
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--accent);
+  opacity: 0.7;
+  margin-bottom: 1rem;
+}
 .service-icon {
-width: 56px;
-height: 56px;
-display: flex;
-align-items: center;
-justify-content: center;
-background: var(--accent-dim);
-border: 1px solid rgba(0, 212, 255, 0.2);
-border-radius: 16px;
-font-size: 1.5rem;
-color: var(--accent);
-margin-bottom: 1.5rem;
-transition: all 0.3s;
+  width: 2.75rem;
+  height: 2.75rem;
+  display: grid;
+  place-items: center;
+  border-radius: 0.85rem;
+  background: var(--accent-soft);
+  color: var(--accent);
+  font-size: 1.15rem;
+  margin-bottom: 1.15rem;
+  transition: transform 0.35s var(--ease-out);
 }
-.service-card:hover .service-icon {
-transform: scale(1.1);
-box-shadow: 0 0 20px rgba(0, 212, 255, 0.3);
-}
+.service-card:hover .service-icon { transform: scale(1.08); }
 .service-title {
-font-family: var(--font-display);
-font-size: 1.25rem;
-font-weight: 600;
-margin-bottom: 0.75rem;
-color: var(--text-primary);
+  font-family: var(--font-display);
+  font-size: 1.15rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  margin-bottom: 0.6rem;
 }
 .service-desc {
-color: var(--text-secondary);
-font-size: 0.9375rem;
-line-height: 1.7;
-margin-bottom: 1.5rem;
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  line-height: 1.65;
+  margin-bottom: 1.15rem;
+  flex-grow: 1;
 }
-.service-list { list-style: none; }
+.service-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
 .service-list li {
-display: flex;
-align-items: center;
-gap: 0.5rem;
-font-size: 0.875rem;
-color: var(--text-tertiary);
-padding: 0.375rem 0;
+  font-size: 0.8125rem;
+  color: var(--text-muted);
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
 }
 .service-list li::before {
-content: '→';
-color: var(--accent);
-font-weight: 600;
+  content: "→";
+  color: var(--accent);
+  flex-shrink: 0;
+  font-size: 0.75rem;
+  margin-top: 0.15rem;
 }
-/* ─────────────────────────────────────────────
-ABOUT
-───────────────────────────────────────────── */
+html[dir="rtl"] .service-list li::before { content: "←"; }
+
+/* ─── ABOUT ─── */
 .about-grid {
-display: grid;
-grid-template-columns: 1fr 1fr;
-gap: var(--space-2xl);
-align-items: center;
+  display: grid;
+  gap: 3rem;
+  align-items: center;
 }
-.about-visual { position: relative; }
-.glass-portrait {
-aspect-ratio: 4/5;
-border-radius: 32px;
-background: linear-gradient(135deg, rgba(0, 212, 255, 0.1) 0%, rgba(124, 58, 237, 0.1) 100%);
-backdrop-filter: var(--blur-md);
-border: 1px solid var(--glass-border);
-display: flex;
-align-items: center;
-justify-content: center;
-position: relative;
-overflow: hidden;
+@media (min-width: 900px) {
+  .about-grid {
+    grid-template-columns: 0.9fr 1.1fr;
+    gap: 4rem;
+  }
 }
-.glass-portrait img {
-width: 100%;
-height: 100%;
-object-fit: cover;
-border-radius: 32px;
+html[dir="rtl"] .about-grid { direction: rtl; }
+.about-visual {
+  position: relative;
 }
-.glass-portrait::before {
-content: 'N';
-font-family: var(--font-display);
-font-size: 12rem;
-font-weight: 700;
-background: linear-gradient(135deg, rgba(255, 255, 255, 0.1) 0%, transparent 100%);
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
-position: absolute;
+.about-img-wrap {
+  border-radius: 1.5rem;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  aspect-ratio: 4/5;
+  max-width: 400px;
+  margin: 0 auto;
+  box-shadow: var(--shadow);
 }
-.stats-float {
-position: absolute;
-bottom: -2rem;
-right: -2rem;
-display: grid;
-grid-template-columns: 1fr 1fr;
-gap: 1rem;
-}
-.stat-box {
-padding: 1.5rem;
-background: var(--glass-bg);
-backdrop-filter: var(--blur-md);
-border: 1px solid var(--glass-border);
-border-radius: 16px;
-text-align: center;
-min-width: 120px;
-}
-.stat-number {
-font-family: var(--font-display);
-font-size: 2rem;
-font-weight: 700;
-color: var(--accent);
-display: block;
-}
-.stat-label {
-font-size: 0.75rem;
-color: var(--text-tertiary);
-text-transform: uppercase;
-letter-spacing: 0.1em;
+.about-img-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
 }
 .about-content h3 {
-font-family: var(--font-display);
-font-size: 2rem;
-font-weight: 600;
-margin-bottom: 1.5rem;
-line-height: 1.3;
-color: var(--text-primary);
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  margin-bottom: 1rem;
 }
 .about-content p {
-color: var(--text-secondary);
-margin-bottom: 1.5rem;
-line-height: 1.8;
+  color: var(--text-secondary);
+  margin-bottom: 1rem;
+  line-height: 1.75;
+  font-size: 1rem;
 }
-.tag-cloud {
-display: flex;
-flex-wrap: wrap;
-gap: 0.75rem;
-margin-top: 2rem;
+.about-stats {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  margin-top: 2rem;
 }
-.tag {
-padding: 0.5rem 1rem;
-background: var(--glass-bg);
-border: 1px solid var(--glass-border);
-border-radius: 100px;
-font-size: 0.8125rem;
-color: var(--text-secondary);
-transition: all 0.3s;
+.about-stat {
+  padding: 1.15rem;
+  border-radius: var(--radius-sm);
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  text-align: center;
 }
-.tag:hover {
-background: var(--accent-dim);
-border-color: var(--accent);
-color: var(--accent);
-transform: translateY(-2px);
+.about-stat strong {
+  display: block;
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--accent);
+  letter-spacing: -0.02em;
 }
-/* ─────────────────────────────────────────────
-EXPERIENCE - FIXED (CYAN ONLY)
-───────────────────────────────────────────── */
-#experience { background: var(--bg-secondary); }
-.experience-wrapper {
-max-width: 1000px;
-margin: 0 auto;
-display: grid;
-gap: 1rem;
+.about-stat span {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
 }
-.exp-block {
-padding: 2rem 2.25rem;
-background: var(--glass-bg);
-backdrop-filter: var(--blur-md);
-border: 1px solid var(--glass-border);
-border-radius: 16px;
-transition: all 0.4s var(--ease-liquid);
-position: relative;
-overflow: hidden;
+
+/* ─── EXPERIENCE ─── */
+.exp-timeline {
+  position: relative;
+  max-width: 820px;
 }
-.exp-block::before {
-content: '';
-position: absolute;
-left: 0;
-top: 0;
-bottom: 0;
-width: 3px;
-background: var(--accent);
-border-radius: 0 3px 3px 0;
-opacity: 0;
-transition: opacity 0.4s var(--ease-smooth);
+.exp-timeline::before {
+  content: "";
+  position: absolute;
+  top: 0; bottom: 0;
+  left: 0.55rem;
+  width: 2px;
+  background: linear-gradient(to bottom, var(--accent), var(--border));
+  border-radius: 2px;
 }
-.exp-block:hover {
-border-color: var(--glass-border-strong);
-transform: translateX(8px);
-box-shadow: -10px 0 40px rgba(0, 0, 0, 0.2), 0 0 0 1px rgba(0, 212, 255, 0.15);
-background: var(--glass-bg-hover);
+html[dir="rtl"] .exp-timeline::before {
+  left: auto;
+  right: 0.55rem;
 }
-.exp-block:hover::before { opacity: 1; }
 .exp-item {
-display: flex;
-gap: 1.25rem;
-padding: 0.6rem 0;
+  position: relative;
+  padding-left: 2.5rem;
+  padding-bottom: 2rem;
 }
+html[dir="rtl"] .exp-item {
+  padding-left: 0;
+  padding-right: 2.5rem;
+}
+.exp-item:last-child { padding-bottom: 0; }
 .exp-dot {
-flex-shrink: 0;
-width: 8px;
-height: 8px;
-background: var(--accent);
-border-radius: 50%;
-margin-top: 0.5rem;
-box-shadow: 0 0 10px var(--accent-glow);
+  position: absolute;
+  left: 0.3rem;
+  top: 0.35rem;
+  width: 0.7rem;
+  height: 0.7rem;
+  border-radius: 50%;
+  background: var(--bg);
+  border: 2px solid var(--accent);
+  box-shadow: 0 0 0 4px var(--accent-soft);
+}
+html[dir="rtl"] .exp-dot {
+  left: auto;
+  right: 0.3rem;
 }
 .exp-text {
-color: var(--text-secondary);
-font-size: 0.95rem;
-line-height: 1.75;
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+  line-height: 1.7;
 }
-/* ─────────────────────────────────────────────
-SKILLS
-───────────────────────────────────────────── */
+
+/* ─── SKILLS ─── */
 .skills-cloud {
-display: flex;
-flex-wrap: wrap;
-justify-content: center;
-gap: 1rem;
-max-width: 900px;
-margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+  justify-content: flex-start;
 }
 .skill-pill {
-padding: 0.875rem 1.5rem;
-background: var(--glass-bg);
-backdrop-filter: var(--blur-sm);
-border: 1px solid var(--glass-border);
-border-radius: 100px;
-font-size: 0.875rem;
-font-weight: 500;
-color: var(--text-secondary);
-transition: all 0.3s var(--ease-smooth);
-cursor: default;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.55rem 1rem;
+  border-radius: var(--radius-pill);
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--text-secondary);
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  transition: all 0.3s var(--ease-out);
 }
 .skill-pill:hover {
-background: var(--glass-bg-hover);
-border-color: var(--accent);
-color: var(--accent);
-transform: translateY(-3px) scale(1.05);
-box-shadow: 0 10px 30px rgba(0, 212, 255, 0.15);
+  color: var(--text);
+  border-color: var(--accent);
+  background: var(--accent-soft);
+  transform: translateY(-2px);
 }
 .skill-pill.featured {
-background: var(--accent-dim);
-border-color: rgba(0, 212, 255, 0.3);
-color: var(--accent);
+  border-color: rgba(7,146,177,0.35);
+  color: var(--accent);
 }
-/* ─────────────────────────────────────────────
-CERTIFICATIONS
-───────────────────────────────────────────── */
-#certifications { background: var(--bg-secondary); }
+
+/* ─── CERTIFICATIONS ─── */
 .certs-grid {
-display: grid;
-grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-gap: 1.5rem;
+  display: grid;
+  gap: 1rem;
+}
+@media (min-width: 640px) {
+  .certs-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (min-width: 1024px) {
+  .certs-grid { grid-template-columns: repeat(3, 1fr); }
 }
 .cert-card {
-display: flex;
-align-items: flex-start;
-gap: 1.25rem;
-padding: 1.75rem;
-background: var(--glass-bg);
-backdrop-filter: var(--blur-sm);
-border: 1px solid var(--glass-border);
-border-radius: 16px;
-transition: all 0.3s var(--ease-smooth);
+  padding: 1.35rem 1.5rem;
+  border-radius: var(--radius);
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  transition: border-color 0.3s, background 0.3s, transform 0.3s;
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
 }
 .cert-card:hover {
-transform: translateY(-4px);
-border-color: var(--accent);
-box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+  border-color: var(--border-strong);
+  background: var(--bg-card-hover);
+  transform: translateY(-2px);
 }
-.cert-icon {
-width: 48px;
-height: 48px;
-display: flex;
-align-items: center;
-justify-content: center;
-background: var(--accent-dim);
-border: 1px solid rgba(0, 212, 255, 0.2);
-border-radius: 12px;
-color: var(--accent);
-font-size: 1.25rem;
-flex-shrink: 0;
+.cert-title {
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: var(--text);
 }
-.cert-content h4 {
-font-size: 1rem;
-font-weight: 600;
-margin-bottom: 0.25rem;
-color: var(--text-primary);
+.cert-meta {
+  font-size: 0.8rem;
+  color: var(--text-muted);
 }
-.cert-content p {
-font-size: 0.8125rem;
-color: var(--text-tertiary);
+
+/* ─── CONTACT / CTA ─── */
+.cta {
+  padding: 5rem 0 6rem;
 }
-/* ─────────────────────────────────────────────
-CTA / HIRE
-───────────────────────────────────────────── */
-#hire { position: relative; }
-.cta-container {
-max-width: 900px;
-margin: 0 auto;
-text-align: center;
-padding: var(--space-3xl) var(--space-xl);
-background: var(--glass-bg);
-backdrop-filter: var(--blur-lg);
-border: 1px solid var(--glass-border);
-border-radius: 40px;
-position: relative;
-overflow: hidden;
+.cta-box {
+  position: relative;
+  padding: 3.5rem 2rem;
+  border-radius: 1.75rem;
+  background: var(--bg-surface);
+  border: 1px solid var(--border);
+  text-align: center;
+  overflow: hidden;
 }
-.cta-container::before {
-content: '';
-position: absolute;
-inset: 0;
-background:
-radial-gradient(circle at 20% 50%, rgba(0, 212, 255, 0.1) 0%, transparent 50%),
-radial-gradient(circle at 80% 50%, rgba(124, 58, 237, 0.1) 0%, transparent 50%);
-pointer-events: none;
+.cta-box::before {
+  content: "";
+  position: absolute;
+  top: -40%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60%;
+  height: 80%;
+  background: radial-gradient(ellipse, var(--accent-soft), transparent 70%);
+  pointer-events: none;
 }
 .cta-title {
-font-family: var(--font-display);
-font-size: clamp(2rem, 5vw, 3rem);
-font-weight: 700;
-margin-bottom: 1rem;
-position: relative;
-z-index: 1;
-color: var(--text-primary);
+  font-family: var(--font-display);
+  font-size: clamp(1.75rem, 4vw, 2.5rem);
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  margin-bottom: 0.85rem;
+  position: relative;
 }
 .cta-title span { color: var(--accent); }
-.cta-text {
-font-size: 1.125rem;
-color: var(--text-secondary);
-margin-bottom: 2.5rem;
-max-width: 600px;
-margin-left: auto;
-margin-right: auto;
-position: relative;
-z-index: 1;
+.cta-desc {
+  color: var(--text-secondary);
+  max-width: 32rem;
+  margin: 0 auto 1.75rem;
+  font-size: 1.05rem;
+  line-height: 1.7;
+  position: relative;
 }
-.cta-buttons {
-display: flex;
-gap: 1rem;
-justify-content: center;
-flex-wrap: wrap;
-margin-bottom: 3rem;
-position: relative;
-z-index: 1;
+.cta-email {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--accent);
+  margin-bottom: 1.75rem;
+  position: relative;
+  transition: opacity 0.25s;
 }
-.trust-badges {
-display: flex;
-flex-wrap: wrap;
-justify-content: center;
-gap: 2rem;
-position: relative;
-z-index: 1;
+.cta-email:hover { opacity: 0.85; }
+.cta-actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.85rem;
+  position: relative;
 }
-.trust-item {
-display: flex;
-align-items: center;
-gap: 0.5rem;
-font-size: 0.8125rem;
-color: var(--text-tertiary);
+.cta-tags {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.75rem 1.5rem;
+  margin-top: 2.5rem;
+  padding-top: 2rem;
+  border-top: 1px solid var(--border);
+  position: relative;
 }
-.trust-item i { color: var(--accent); }
-/* ─────────────────────────────────────────────
-FOOTER
-───────────────────────────────────────────── */
-footer {
-background: var(--bg-secondary);
-border-top: 1px solid var(--glass-border);
-padding: var(--space-xl) 0;
+.cta-tags span {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
 }
-.footer-content {
-display: flex;
-flex-direction: column;
-align-items: center;
-text-align: center;
-gap: 1.5rem;
+.cta-tags i { color: var(--accent); font-size: 0.7rem; }
+
+/* ─── FOOTER ─── */
+.footer {
+  padding: 2.5rem 0 3rem;
+  border-top: 1px solid var(--border);
 }
-.footer-logo {
-font-family: var(--font-display);
-font-size: 1.5rem;
-font-weight: 700;
-letter-spacing: -0.02em;
-color: var(--text-primary);
+.footer-inner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
 }
-.footer-logo span { color: var(--accent); }
-.footer-tagline {
-color: var(--text-tertiary);
-font-size: 0.875rem;
+.footer-brand {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 1rem;
+  letter-spacing: -0.02em;
+}
+.footer-brand span { color: var(--accent); }
+.footer-copy {
+  font-size: 0.8rem;
+  color: var(--text-muted);
 }
 .footer-socials {
-display: flex;
-gap: 1rem;
+  display: flex;
+  gap: 0.5rem;
 }
 .footer-socials a {
-width: 40px;
-height: 40px;
-display: flex;
-align-items: center;
-justify-content: center;
-background: var(--glass-bg);
-border: 1px solid var(--glass-border);
-border-radius: 50%;
-color: var(--text-secondary);
-font-size: 0.875rem;
-text-decoration: none;
-transition: all 0.3s;
+  width: 2.25rem;
+  height: 2.25rem;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  border: 1px solid var(--border);
+  color: var(--text-secondary);
+  transition: all 0.25s;
 }
 .footer-socials a:hover {
-background: var(--accent-dim);
-border-color: var(--accent);
-color: var(--accent);
-transform: translateY(-3px);
+  color: var(--accent);
+  border-color: var(--accent);
+  background: var(--accent-soft);
 }
-.footer-copy {
-font-size: 0.75rem;
-color: var(--text-muted);
-margin-top: 1rem;
+
+/* ─── BACK TO TOP ─── */
+.back-top {
+  position: fixed;
+  bottom: 1.5rem;
+  right: 1.5rem;
+  z-index: 900;
+  width: 2.75rem;
+  height: 2.75rem;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: var(--glass);
+  backdrop-filter: blur(var(--blur));
+  border: 1px solid var(--glass-border);
+  color: var(--text-secondary);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(12px);
+  transition: all 0.35s var(--ease-out);
+  box-shadow: var(--shadow);
 }
-/* ─────────────────────────────────────────────
-BACK TO TOP
-───────────────────────────────────────────── */
-.back-to-top {
-position: fixed;
-bottom: 2rem;
-right: 2rem;
-width: 48px;
-height: 48px;
-display: flex;
-align-items: center;
-justify-content: center;
-background: var(--glass-bg);
-backdrop-filter: var(--blur-md);
-border: 1px solid var(--glass-border);
-border-radius: 50%;
-color: var(--accent);
-font-size: 1rem;
-text-decoration: none;
-opacity: 0;
-transform: translateY(20px);
-transition: all 0.3s var(--ease-smooth);
-pointer-events: none;
-z-index: 100;
+html[dir="rtl"] .back-top {
+  right: auto;
+  left: 1.5rem;
 }
-.back-to-top.visible {
-opacity: 1;
-transform: translateY(0);
-pointer-events: all;
+.back-top.visible {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
 }
-.back-to-top:hover {
-background: var(--accent-dim);
-border-color: var(--accent);
-transform: translateY(-3px);
+.back-top:hover {
+  color: var(--accent);
+  border-color: var(--accent);
 }
-/* ─────────────────────────────────────────────
-SCROLL REVEAL
-───────────────────────────────────────────── */
+
+/* ─── REVEAL ─── */
 .reveal {
-opacity: 0;
-transform: translateY(40px);
-transition: all 0.8s var(--ease-liquid);
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 0.7s var(--ease-out), transform 0.7s var(--ease-out);
 }
 .reveal.visible {
-opacity: 1;
-transform: translateY(0);
+  opacity: 1;
+  transform: translateY(0);
 }
-.reveal-left {
-opacity: 0;
-transform: translateX(-40px);
-transition: all 0.8s var(--ease-liquid);
-}
-.reveal-left.visible {
-opacity: 1;
-transform: translateX(0);
-}
-.reveal-right {
-opacity: 0;
-transform: translateX(40px);
-transition: all 0.8s var(--ease-liquid);
-}
-.reveal-right.visible {
-opacity: 1;
-transform: translateX(0);
-}
-/* ─────────────────────────────────────────────
-RESPONSIVE
-───────────────────────────────────────────── */
-@media (max-width: 1024px) {
-.hero-grid, .about-grid {
-grid-template-columns: 1fr;
-gap: 3rem;
-}
-.hero-visual { order: -1; }
-.glass-sphere {
-width: 300px;
-height: 300px;
-}
-.stats-float {
-position: relative;
-bottom: auto;
-right: auto;
-margin-top: 2rem;
-justify-content: center;
-}
-}
-@media (max-width: 768px) {
-.nav-menu {
-display: none;
-position: absolute;
-top: calc(100% + 1rem);
-left: 0;
-right: 0;
-background: var(--bg-secondary);
-backdrop-filter: var(--blur-lg);
-border: 1px solid var(--glass-border);
-border-radius: 20px;
-padding: 1rem;
-flex-direction: column;
-gap: 0.5rem;
-}
-.nav-menu.open { display: flex; }
-.hamburger { display: flex; }
-.services-grid { grid-template-columns: 1fr; }
-.hero-actions { flex-direction: column; }
-.btn {
-width: 100%;
-justify-content: center;
-}
-.cta-buttons { flex-direction: column; }
-.exp-block { padding: 1.5rem; }
-}
-@media (max-width: 480px) {
-.stats-float {
-grid-template-columns: 1fr 1fr;
-gap: 0.75rem;
-}
-.stat-box {
-padding: 1rem;
-min-width: auto;
-}
-.trust-badges {
-flex-direction: column;
-gap: 1rem;
-}
-.exp-item { gap: 0.875rem; }
-}
+.reveal-delay-1 { transition-delay: 0.08s; }
+.reveal-delay-2 { transition-delay: 0.16s; }
+.reveal-delay-3 { transition-delay: 0.24s; }
+.reveal-delay-4 { transition-delay: 0.32s; }
 
-/* ─────────────────────────────────────────────
-THEME + LANGUAGE CONTROLS
-───────────────────────────────────────────── */
-:root { color-scheme: dark; }
-html[data-theme="light"] {
---bg-primary: #f4f7f9;
---bg-secondary: #e9eef2;
---bg-tertiary: #dde5ea;
---bg-elevated: #ffffff;
---glass-bg: rgba(255, 255, 255, 0.58);
---glass-bg-hover: rgba(255, 255, 255, 0.82);
---glass-border: rgba(15, 23, 42, 0.10);
---glass-border-strong: rgba(15, 23, 42, 0.18);
---glass-highlight: rgba(255, 255, 255, 0.8);
---text-primary: #111827;
---text-secondary: rgba(17, 24, 39, 0.72);
---text-tertiary: rgba(17, 24, 39, 0.58);
---text-muted: rgba(17, 24, 39, 0.42);
-color-scheme: light;
+/* Section nav (desktop side dots) */
+.section-nav {
+  position: fixed;
+  right: 1.25rem;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 800;
+  display: none;
+  flex-direction: column;
+  gap: 0.65rem;
 }
-html[data-theme="light"] body::before {
-background:
-radial-gradient(ellipse 80% 50% at 20% 40%, rgba(0, 212, 255, 0.13), transparent),
-radial-gradient(ellipse 60% 40% at 80% 60%, rgba(124, 58, 237, 0.08), transparent),
-radial-gradient(ellipse 50% 30% at 50% 100%, rgba(244, 114, 182, 0.07), transparent);
+@media (min-width: 1200px) {
+  .section-nav { display: flex; }
 }
-html[data-theme="light"] .nav-inner {
-background: rgba(255,255,255,0.72);
-box-shadow: 0 8px 32px rgba(15,23,42,0.10), inset 0 1px 0 rgba(255,255,255,0.85);
+html[dir="rtl"] .section-nav {
+  right: auto;
+  left: 1.25rem;
 }
-html[data-theme="light"] .nav-inner:hover {
-box-shadow: 0 12px 40px rgba(15,23,42,0.14), 0 0 0 1px rgba(0,212,255,0.12), inset 0 1px 0 rgba(255,255,255,0.95);
+.section-nav a {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--border-strong);
+  transition: background 0.3s, transform 0.3s;
+  position: relative;
 }
-html[data-theme="light"] .service-card:hover,
-html[data-theme="light"] .exp-block:hover {
-box-shadow: 0 20px 40px rgba(15,23,42,0.10), 0 0 0 1px rgba(0,212,255,0.18), inset 0 1px 0 rgba(255,255,255,0.8);
+.section-nav a.active {
+  background: var(--accent);
+  transform: scale(1.35);
 }
-html[data-theme="light"] .back-to-top { box-shadow: 0 8px 24px rgba(15,23,42,0.12); }
-html[data-theme="light"] ::-webkit-scrollbar-track { background: var(--bg-secondary); }
-.theme-controls {
-position:relative;
-z-index:1002;
-pointer-events:auto;
-display:flex;
-align-items:center;
-gap:.45rem;
-margin-left:.5rem;
-}
-.lang-switch, .theme-toggle {
-display:inline-flex;
-align-items:center;
-justify-content:center;
-gap:.4rem;
-min-width:40px;
-height:36px;
-padding:0 .75rem;
-border:1px solid var(--glass-border);
-border-radius:999px;
-background:var(--glass-bg);
-color:var(--text-secondary);
-font:500 .75rem var(--font-body);
-text-decoration:none;
-cursor:pointer;
-transition:all .3s var(--ease-smooth);
-white-space:nowrap;
-}
-.lang-switch:hover, .theme-toggle:hover {
-color:var(--accent);
-border-color:var(--accent);
-background:var(--accent-dim);
-}
-.theme-toggle i { font-size:.85rem; }
-html[dir="rtl"] {
---font-display: 'IBM Plex Sans Arabic', system-ui, sans-serif;
---font-body: 'IBM Plex Sans Arabic', system-ui, sans-serif;
-}
-html[dir="rtl"] body { font-family: var(--font-body); }
-html[dir="rtl"] .nav-menu { direction:rtl; }
-html[dir="rtl"] .nav-menu a { font-size:.78rem; }
-html[dir="rtl"] .stats-float { right:auto; left:-2rem; }
-html[dir="rtl"] .exp-block::before { left:auto; right:0; border-radius:3px 0 0 3px; }
-html[dir="rtl"] .exp-block:hover { transform:translateX(-8px); }
-html[dir="rtl"] .service-list li::before { content:'←'; }
-html[dir="rtl"] .back-to-top { right:auto; left:2rem; }
-html[dir="rtl"] .reveal-left { transform:translateX(40px); }
-html[dir="rtl"] .reveal-left.visible { transform:translateX(0); }
-html[dir="rtl"] .reveal-right { transform:translateX(-40px); }
-html[dir="rtl"] .reveal-right.visible { transform:translateX(0); }
-@media (max-width:768px) {
-.theme-controls { margin-left:0; margin-right:0; }
-html[dir="rtl"] .stats-float { left:auto; right:auto; }
-html[dir="rtl"] .back-to-top { left:1rem; }
-}
+.section-nav a:hover { background: var(--text-muted); }
 
-
-/* Language and theme controls */
-.nav { z-index: 9999; }
-.theme-controls { position: relative; z-index: 10000; }
-.lang-switch, .theme-toggle { position: relative; z-index: 10001; pointer-events: auto; }
-</style>
+/* Focus visible */
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+}
+  </style>
 </head>
-<body oncontextmenu="return false">
-<!-- Navigation -->
-<nav class="nav">
-<div class="nav-inner">
-<a href="#hero" class="nav-logo">NEDLSALAH</a>
-<ul class="nav-menu" id="navMenu">
-<li><a href="#hero" class="active">Home</a></li>
-<li><a href="#services">Services</a></li>
-<li><a href="#about">About</a></li>
-<li><a href="#experience">Experience</a></li>
-<li><a href="#skills">Skills</a></li>
-<li><a href="#certifications">Credentials</a></li>
-<li><a href="#hire">Contact</a></li>
-</ul>
-<div class="theme-controls">
-<a class="lang-switch" href="arabic.html" target="_self" aria-label="Switch to Arabic">العربية</a>
-<button class="theme-toggle" id="themeToggle" type="button" aria-label="Switch theme" title="Switch theme"><i class="fas fa-sun"></i></button>
-<button class="hamburger" id="hamburger" aria-label="Menu" aria-expanded="false">
-<span></span>
-<span></span>
-<span></span>
-</button>
-</div>
-</div>
-</nav>
-<!-- Hero Section -->
-<section id="hero">
-<div class="orb orb-1"></div>
-<div class="orb orb-2"></div>
-<div class="orb orb-3"></div>
-<div class="container">
-<div class="hero-grid">
-<div class="hero-content">
-<div class="hero-badge">Available for Projects</div>
-<h1 class="hero-title">
-<span class="line">Digital Creator</span>
-<span class="line">& Developer</span>
-</h1>
-<p class="hero-subtitle">
-I help businesses grow online through smart marketing, high-quality design, and content that converts - 7+ years of experience in the UAE.
-</p>
-<div class="hero-typed">
-<span id="typed-text"></span><span class="cursor"></span>
-</div>
-<div class="hero-actions">
-<a href="#services" class="btn btn-primary"><i class="fas fa-briefcase"></i> View Services</a>
-<a href="#hire" class="btn btn-secondary"><i class="fas fa-paper-plane"></i> Get in Touch</a>
-</div>
-<div class="hero-socials">
-<a href="https://www.behance.net/nedlsalah" class="social-link" target="_blank" title="Behance"><i class="fab fa-behance"></i></a>
-<a href="https://500px.com/nedlsalah" class="social-link" target="_blank" title="500px"><i class="fab fa-500px"></i></a>
-</div>
-</div>
-<div class="hero-visual">
-<div class="glass-sphere">
-<div class="sphere-inner"></div>
-</div>
-</div>
-</div>
-</div>
-</section>
-<!-- Services Section -->
-<section id="services">
-<div class="container">
-<div class="section-header reveal">
-<div class="section-eyebrow"><i class="fas fa-circle-dot"></i> What I Do</div>
-<h2 class="section-title">Services <span>& Solutions</span></h2>
-<p class="section-desc">Full-service digital expertise - strategy, design, development, and content under one roof.</p>
-</div>
-<div class="services-grid">
-<div class="service-card reveal">
-<div class="service-icon"><i class="fas fa-bullseye"></i></div>
-<h3 class="service-title">Digital Marketing & Paid Ads</h3>
-<p class="service-desc">Data-driven campaigns that reach the right audience and convert. Full funnel from strategy to reporting.</p>
-<ul class="service-list">
-<li>Meta Ads - Facebook & Instagram</li>
-<li>Google Ads & Search campaigns</li>
-<li>Content planning & calendar</li>
-<li>Campaign reporting & optimisation</li>
-</ul>
-</div>
-<div class="service-card reveal">
-<div class="service-icon"><i class="fab fa-wordpress"></i></div>
-<h3 class="service-title">WordPress Development</h3>
-<p class="service-desc">Fast, mobile-friendly websites built to your brand - no template bloat, no compromise.</p>
-<ul class="service-list">
-<li>Business & portfolio websites</li>
-<li>WooCommerce e-commerce stores</li>
-<li>Landing & lead capture pages</li>
-<li>SEO-friendly & speed-optimised</li>
-</ul>
-</div>
-<div class="service-card reveal">
-<div class="service-icon"><i class="fas fa-pen-ruler"></i></div>
-<h3 class="service-title">Graphic Design & Branding</h3>
-<p class="service-desc">Visual identity that makes your brand impossible to ignore - consistent, memorable, built to last.</p>
-<ul class="service-list">
-<li>Logo & brand identity design</li>
-<li>Social media graphics & templates</li>
-<li>Flyers, posters & print</li>
-<li>Brand guidelines & style systems</li>
-</ul>
-</div>
-<div class="service-card reveal">
-<div class="service-icon"><i class="fas fa-camera"></i></div>
-<h3 class="service-title">Photography & Video</h3>
-<p class="service-desc">Content that stops the scroll - Reels, product photos, and event content built for social.</p>
-<ul class="service-list">
-<li>Instagram Reels & TikTok videos</li>
-<li>Product & food photography</li>
-<li>Event & brand photography</li>
-<li>Video editing & colour grading</li>
-</ul>
-</div>
-<div class="service-card reveal">
-<div class="service-icon"><i class="fas fa-hashtag"></i></div>
-<h3 class="service-title">Social Media Management</h3>
-<p class="service-desc">Consistent, on-brand presence without the hassle. I handle everything so you focus on business.</p>
-<ul class="service-list">
-<li>Multi-platform content creation</li>
-<li>Posting schedules & community</li>
-<li>Audience growth strategies</li>
-<li>Monthly performance reports</li>
-</ul>
-</div>
-<div class="service-card reveal">
-<div class="service-icon"><i class="fas fa-pencil-alt"></i></div>
-<h3 class="service-title">Content & Copywriting</h3>
-<p class="service-desc">Words that work. Website copy, captions, and product descriptions that connect and drive action.</p>
-<ul class="service-list">
-<li>Website & landing page copy</li>
-<li>Social media captions</li>
-<li>Product descriptions</li>
-<li>Arabic, English & French</li>
-</ul>
-</div>
-</div>
-</div>
-</section>
-<!-- About Section -->
-<section id="about">
-<div class="container">
-<div class="about-grid">
-<div class="about-visual reveal-left">
-<div class="glass-portrait">
-<img src="./img/me.jpg" alt="NEDLSALAH Portrait">
-</div>
-<div class="stats-float">
-<div class="stat-box"><span class="stat-number">7+</span><span class="stat-label">Years Exp</span></div>
-<div class="stat-box"><span class="stat-number">UAE</span><span class="stat-label">Based</span></div>
-<div class="stat-box"><span class="stat-number">6</span><span class="stat-label">Services</span></div>
-<div class="stat-box"><span class="stat-number">3</span><span class="stat-label">Languages</span></div>
-</div>
-</div>
-<div class="about-content reveal-right">
-<div class="section-eyebrow"><i class="fas fa-circle-dot"></i> About Me</div>
-<h3>One Person,<br>Full Service</h3>
-<p>I'm <strong>NEDLSALAH</strong> - a Digital Marketing Specialist, WordPress Web Developer, and Graphic Designer based in Abu Dhabi, UAE. With 7+ years of hands-on experience across UAE agencies and corporate brands, I bring the rare combination of strategic marketing thinking and strong creative execution under one roof.</p>
-<p>Whether you need a campaign that generates leads, a website that converts visitors, a brand identity that stands out, or content that stops the scroll - <strong>I handle it all end-to-end</strong>. No waiting on multiple freelancers. No miscommunication.</p>
-<p>I've worked with restaurants, retail brands, events agencies, and more across the UAE. My approach: understand what you need, deliver quality work on time, make sure it gets results.</p>
-<div class="tag-cloud">
-<span class="tag">Meta Ads</span>
-<span class="tag">Google Ads</span>
-<span class="tag">SEO</span>
-<span class="tag">WordPress</span>
-<span class="tag">Photoshop</span>
-<span class="tag">Illustrator</span>
-<span class="tag">Canva</span>
-<span class="tag">Photography</span>
-<span class="tag">Reels</span>
-<span class="tag">Brand Identity</span>
-<span class="tag">Content Strategy</span>
-<span class="tag">AI Tools</span>
-</div>
-</div>
-</div>
-</div>
-</section>
-<!-- Experience Section -->
-<section id="experience">
-<div class="container">
-<div class="section-header reveal">
-<div class="section-eyebrow"><i class="fas fa-circle-dot"></i> Track Record</div>
-<h2 class="section-title">Professional <span>Experience</span></h2>
-<p class="section-desc">A consistent history of results across UAE agencies and corporate environments.</p>
-</div>
-<div class="experience-wrapper">
-<div class="exp-block reveal">
-<div class="exp-item">
-<span class="exp-dot"></span>
-<p class="exp-text">Plan and execute social media strategies across multiple client accounts, producing consistent, brand-aligned content tailored to each audience.</p>
-</div>
-<div class="exp-item">
-<span class="exp-dot"></span>
-<p class="exp-text">Create engaging visual content including short-form videos and Reels, handling shooting and editing using mobile-first approaches to maintain authenticity and performance.</p>
-</div>
-<div class="exp-item">
-<span class="exp-dot"></span>
-<p class="exp-text">Support and manage paid advertising campaigns (Meta Ads and Google Ads), assisting with campaign setup, audience targeting, creative testing, and ongoing optimization to improve reach and lead quality.</p>
-</div>
-</div>
-<div class="exp-block reveal">
-<div class="exp-item">
-<span class="exp-dot"></span>
-<p class="exp-text">Collaborate closely with the design team to develop campaign visuals, ensuring alignment with brand identity and marketing objectives.</p>
-</div>
-<div class="exp-item">
-<span class="exp-dot"></span>
-<p class="exp-text">Build and maintain WordPress websites and landing pages, focusing on clean design, usability, and mobile responsiveness.</p>
-</div>
-<div class="exp-item">
-<span class="exp-dot"></span>
-<p class="exp-text">Work directly with clients to understand requirements and translate ideas into practical marketing outputs across content, ads, and web.</p>
-</div>
-<div class="exp-item">
-<span class="exp-dot"></span>
-<p class="exp-text">Contribute to campaign planning and creative direction through brainstorming sessions, helping shape messaging and execution.</p>
-</div>
-</div>
-<div class="exp-block reveal">
-<div class="exp-item">
-<span class="exp-dot"></span>
-<p class="exp-text">Ran paid social and Google Ads campaigns, optimising reach and lead quality continuously through data-driven adjustments.</p>
-</div>
-<div class="exp-item">
-<span class="exp-dot"></span>
-<p class="exp-text">Created tailored social media content - graphics, photos, and short videos - for each client's specific audience and brand voice.</p>
-</div>
-<div class="exp-item">
-<span class="exp-dot"></span>
-<p class="exp-text">Built and maintained WordPress websites including layout improvements, performance tuning, and mobile optimisation.</p>
-</div>
-<div class="exp-item">
-<span class="exp-dot"></span>
-<p class="exp-text">Managed content calendars and coordinated multi-channel campaigns on schedule, ensuring consistent brand output.</p>
-</div>
-</div>
-<div class="exp-block reveal">
-<div class="exp-item">
-<span class="exp-dot"></span>
-<p class="exp-text">Managed all social media channels day-to-day, growing brand presence through organic content strategies and paid campaigns.</p>
-</div>
-<div class="exp-item">
-<span class="exp-dot"></span>
-<p class="exp-text">Led a full brand identity refresh - redesigning logo, establishing visual style systems, and defining tone of voice across touchpoints.</p>
-</div>
-<div class="exp-item">
-<span class="exp-dot"></span>
-<p class="exp-text">Improved website SEO through on-page optimisation, steadily increasing organic visibility and inbound traffic over time.</p>
-</div>
-<div class="exp-item">
-<span class="exp-dot"></span>
-<p class="exp-text">Produced photography and visual content for products, events, and brand campaigns that aligned with strategic goals.</p>
-</div>
-</div>
-<div class="exp-block reveal">
-<div class="exp-item">
-<span class="exp-dot"></span>
-<p class="exp-text">Delivered end-to-end digital marketing, web design, and branding projects from initial brief through to successful launch.</p>
-</div>
-<div class="exp-item">
-<span class="exp-dot"></span>
-<p class="exp-text">Built custom websites and designed brand identities including logos, color systems, and social media template kits.</p>
-</div>
-<div class="exp-item">
-<span class="exp-dot"></span>
-<p class="exp-text">Created engaging social media content and ran targeted paid campaigns to grow client reach and drive measurable engagement.</p>
-</div>
-</div>
-</div>
-</div>
-</section>
-<!-- Skills Section -->
-<section id="skills">
-<div class="container">
-<div class="section-header reveal">
-<div class="section-eyebrow"><i class="fas fa-circle-dot"></i> Expertise</div>
-<h2 class="section-title">The <span>Toolkit</span></h2>
-<p class="section-desc">Every tool I use to deliver end-to-end digital work at the highest level.</p>
-</div>
-<div class="skills-cloud reveal">
-<span class="skill-pill featured">Meta Ads</span>
-<span class="skill-pill featured">Google Ads</span>
-<span class="skill-pill featured">SEO</span>
-<span class="skill-pill">Google Analytics</span>
-<span class="skill-pill featured">WordPress</span>
-<span class="skill-pill">HTML & CSS</span>
-<span class="skill-pill">WooCommerce</span>
-<span class="skill-pill">Responsive Design</span>
-<span class="skill-pill featured">Instagram & Reels</span>
-<span class="skill-pill">Facebook</span>
-<span class="skill-pill">LinkedIn</span>
-<span class="skill-pill featured">Photography</span>
-<span class="skill-pill featured">Video Editing</span>
-<span class="skill-pill">Short-Form Video</span>
-<span class="skill-pill featured">Photoshop</span>
-<span class="skill-pill featured">Illustrator</span>
-<span class="skill-pill">Lightroom</span>
-<span class="skill-pill featured">Canva</span>
-<span class="skill-pill featured">Logo & Brand Design</span>
-<span class="skill-pill">Mailchimp</span>
-<span class="skill-pill">Hootsuite</span>
-<span class="skill-pill">ChatGPT & AI Tools</span>
-<span class="skill-pill">Trello & Notion</span>
-<span class="skill-pill">Arabic · English · French</span>
-</div>
-</div>
-</section>
-<!-- Certifications Section -->
-<section id="certifications">
-<div class="container">
-<div class="section-header reveal">
-<div class="section-eyebrow"><i class="fas fa-circle-dot"></i> Credentials</div>
-<h2 class="section-title">Certifi<span>cations</span></h2>
-<p class="section-desc">Professional certifications and continuous learning.</p>
-</div>
-<div class="certs-grid">
-<div class="cert-card reveal">
-<div class="cert-icon"><i class="fab fa-google"></i></div>
-<div class="cert-content">
-<h4>Fundamentals of Digital Marketing</h4>
-<p>Google · 2021</p>
-</div>
-</div>
-<div class="cert-card reveal">
-<div class="cert-icon"><i class="fas fa-graduation-cap"></i></div>
-<div class="cert-content">
-<h4>Front End Web Development Track</h4>
-<p>Udacity · 2020</p>
-</div>
-</div>
-<div class="cert-card reveal">
-<div class="cert-icon"><i class="fab fa-wordpress"></i></div>
-<div class="cert-content">
-<h4>WordPress Site Building</h4>
-<p>OpenClassrooms · 2020</p>
-</div>
-</div>
-<div class="cert-card reveal">
-<div class="cert-icon"><i class="fas fa-mobile-screen"></i></div>
-<div class="cert-content">
-<h4>Responsive Website Basics</h4>
-<p>Coursera · 2019</p>
-</div>
-</div>
-<div class="cert-card reveal">
-<div class="cert-icon"><i class="fab fa-microsoft"></i></div>
-<div class="cert-content">
-<h4>Microsoft Office Specialist: Excel</h4>
-<p>Microsoft · 2019</p>
-</div>
-</div>
-</div>
-</div>
-</section>
-<!-- Hire/CTA Section -->
-<section id="hire">
-<div class="container">
-<div class="cta-container reveal">
-<h2 class="cta-title">Ready to Work <span>Together?</span></h2>
-<p class="cta-text">
-Whether you need a campaign that generates leads, a website that converts, a brand that stands out, or content that performs - I'm available. Let's talk about your project.
-</p>
-<p class="cta-text" style="margin-bottom: 1rem;">
-Email me directly at: <a href="mailto:nedlsalah@gmail.com" style="color: var(--accent); font-weight: 600;">nedlsalah@gmail.com</a>
-</p>
-<div class="cta-buttons">
-<a href="mailto:nedlsalah@gmail.com" class="btn btn-primary"><i class="fas fa-envelope"></i> Send Email</a>
-</div>
-<div class="trust-badges">
-<span class="trust-item"><i class="fas fa-check-circle"></i> 7+ Years Experience</span>
-<span class="trust-item"><i class="fas fa-check-circle"></i> UAE-Based</span>
-<span class="trust-item"><i class="fas fa-check-circle"></i> End-to-End Service</span>
-<span class="trust-item"><i class="fas fa-check-circle"></i> Arabic · English · French</span>
-</div>
-</div>
-</div>
-</section>
-<!-- Footer -->
-<footer>
-<div class="container">
-<div class="footer-content">
-<div class="footer-logo">NEDL<span>SALAH</span></div>
-<div class="footer-tagline">Digital Marketing · Web Development · Design · Photography</div>
-<div class="footer-socials">
-<a href="https://www.behance.net/nedlsalah" target="_blank" title="Behance"><i class="fab fa-behance"></i></a>
-<a href="https://500px.com/nedlsalah" target="_blank" title="500px"><i class="fab fa-500px"></i></a>
-</div>
-<div class="footer-copy">&copy; 2026 NEDLSALAH - All Rights Reserved</div>
-</div>
-</div>
-</footer>
-<!-- Back to Top -->
-<a href="#hero" class="back-to-top" id="backToTop"><i class="fas fa-arrow-up"></i></a>
-<!-- JavaScript -->
-<script>
-document.addEventListener('contextmenu', function(e) {
-e.preventDefault();
-return false;
-});
-document.addEventListener('keydown', function(e) {
-if (e.ctrlKey) {
-const blocked = ['u','U','s','S','i','I','j','J','c','C','p','P'];
-if (blocked.includes(e.key)) { e.preventDefault(); return false; }
-}
-if (e.key === 'F12') { e.preventDefault(); return false; }
-if (e.ctrlKey && e.shiftKey) {
-const blocked2 = ['i','I','j','J','c','C'];
-if (blocked2.includes(e.key)) { e.preventDefault(); return false; }
-}
-return true;
-});
-document.addEventListener('dragstart', function(e) {
-e.preventDefault();
-return false;
-});
-document.addEventListener('copy', function(e) {
-e.preventDefault();
-return false;
-});
-document.addEventListener('cut', function(e) {
-e.preventDefault();
-return false;
-});
-const themeToggle = document.getElementById('themeToggle');
-function applyTheme(theme) {
-  const safeTheme = theme === 'light' ? 'light' : 'dark';
-  document.documentElement.setAttribute('data-theme', safeTheme);
-  localStorage.setItem('site-theme', safeTheme);
-  themeToggle.innerHTML = safeTheme === 'dark' ? '<i class="fas fa-sun"></i>' : '<i class="fas fa-moon"></i>';
-  themeToggle.setAttribute('aria-label', safeTheme === 'dark' ? 'Switch to light theme' : 'Switch to dark theme');
-  themeToggle.setAttribute('title', safeTheme === 'dark' ? 'Light mode' : 'Dark mode');
-}
-applyTheme(document.documentElement.getAttribute('data-theme') || 'dark');
-themeToggle.addEventListener('click', () => {
-  const nextTheme = document.documentElement.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
-  applyTheme(nextTheme);
-});
-const typedText = document.getElementById('typed-text');
-const phrases = [
-'Digital Marketing Specialist',
-'WordPress Web Developer',
-'Graphic & Brand Designer',
-'Social Media Manager',
-'Photographer & Video Creator'
-];
-let phraseIndex = 0;
-let charIndex = 0;
-let isDeleting = false;
-function typeEffect() {
-const currentPhrase = phrases[phraseIndex];
-if (isDeleting) {
-typedText.textContent = currentPhrase.substring(0, charIndex - 1);
-charIndex--;
-} else {
-typedText.textContent = currentPhrase.substring(0, charIndex + 1);
-charIndex++;
-}
-let typeSpeed = isDeleting ? 50 : 100;
-if (!isDeleting && charIndex === currentPhrase.length) {
-typeSpeed = 2000;
-isDeleting = true;
-} else if (isDeleting && charIndex === 0) {
-isDeleting = false;
-phraseIndex = (phraseIndex + 1) % phrases.length;
-typeSpeed = 500;
-}
-setTimeout(typeEffect, typeSpeed);
-}
-document.addEventListener('DOMContentLoaded', typeEffect);
-const hamburger = document.getElementById('hamburger');
-const navMenu = document.getElementById('navMenu');
-hamburger.addEventListener('click', () => {
-hamburger.classList.toggle('active');
-navMenu.classList.toggle('open');
-const expanded = navMenu.classList.contains('open');
-hamburger.setAttribute('aria-expanded', expanded);
-});
-navMenu.querySelectorAll('a').forEach(link => {
-link.addEventListener('click', () => {
-hamburger.classList.remove('active');
-navMenu.classList.remove('open');
-hamburger.setAttribute('aria-expanded', 'false');
-});
-});
-const revealElements = document.querySelectorAll('.reveal, .reveal-left, .reveal-right');
-const revealObserver = new IntersectionObserver((entries) => {
-entries.forEach(entry => {
-if (entry.isIntersecting) {
-entry.target.classList.add('visible');
-revealObserver.unobserve(entry.target);
-}
-});
-}, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
-revealElements.forEach(el => revealObserver.observe(el));
-const backToTop = document.getElementById('backToTop');
-window.addEventListener('scroll', () => {
-if (window.scrollY > 500) {
-backToTop.classList.add('visible');
-} else {
-backToTop.classList.remove('visible');
-}
-});
-const sections = document.querySelectorAll('section[id]');
-const navLinks = document.querySelectorAll('.nav-menu a');
-window.addEventListener('scroll', () => {
-let current = '';
-sections.forEach(section => {
-const sectionTop = section.offsetTop;
-if (scrollY >= sectionTop - 200) {
-current = section.getAttribute('id');
-}
-});
-navLinks.forEach(link => {
-link.classList.remove('active');
-if (link.getAttribute('href') === '#' + current) {
-link.classList.add('active');
-}
-});
-});
-</script>
+<body>
+  <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+  <div class="cursor-dot" id="cursorDot" aria-hidden="true"></div>
+  <div class="cursor-ring" id="cursorRing" aria-hidden="true"></div>
+
+  <!-- Navigation -->
+  <nav class="nav" role="navigation" aria-label="Main">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo" data-i18n="logo">NEDL<span>SALAH</span></a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#services" data-i18n="nav_services">Services</a></li>
+        <li><a href="#about" data-i18n="nav_about">About</a></li>
+        <li><a href="#experience" data-i18n="nav_experience">Experience</a></li>
+        <li><a href="#skills" data-i18n="nav_skills">Skills</a></li>
+        <li><a href="#certifications" data-i18n="nav_certs">Credentials</a></li>
+        <li><a href="#contact" data-i18n="nav_contact">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button type="button" class="lang-switch" id="langToggle" aria-label="Switch language">
+          <span class="lang-en active-lang">EN</span>
+          <span class="sep">|</span>
+          <span class="lang-ar">AR</span>
+        </button>
+        <button type="button" class="nav-btn" id="themeToggle" aria-label="Switch theme" title="Switch theme">
+          <i class="fas fa-sun" id="themeIcon"></i>
+        </button>
+        <button type="button" class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+    <a href="#services" data-i18n="nav_services">Services</a>
+    <a href="#about" data-i18n="nav_about">About</a>
+    <a href="#experience" data-i18n="nav_experience">Experience</a>
+    <a href="#skills" data-i18n="nav_skills">Skills</a>
+    <a href="#certifications" data-i18n="nav_certs">Credentials</a>
+    <a href="#contact" data-i18n="nav_contact">Contact</a>
+  </div>
+
+  <!-- Section dots -->
+  <nav class="section-nav" aria-label="Section navigation">
+    <a href="#hero" data-section="hero" class="active" title="Home"></a>
+    <a href="#services" data-section="services" title="Services"></a>
+    <a href="#about" data-section="about" title="About"></a>
+    <a href="#experience" data-section="experience" title="Experience"></a>
+    <a href="#skills" data-section="skills" title="Skills"></a>
+    <a href="#certifications" data-section="certifications" title="Credentials"></a>
+    <a href="#contact" data-section="contact" title="Contact"></a>
+  </nav>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero" id="hero">
+      <div class="hero-bg" aria-hidden="true">
+        <div class="hero-orb hero-orb-1"></div>
+        <div class="hero-orb hero-orb-2"></div>
+      </div>
+      <div class="container">
+        <div class="hero-grid">
+          <div class="hero-content">
+            <div class="hero-badge reveal">
+              <span class="dot"></span>
+              <span data-i18n="hero_badge">Available for Projects</span>
+            </div>
+            <h1 class="hero-h1 reveal reveal-delay-1" data-i18n="hero_h1">Digital Marketing Specialist</h1>
+            <div class="hero-typed-wrap reveal reveal-delay-2">
+              <span class="hero-typed" id="typedText"></span>
+              <span class="typed-cursor" aria-hidden="true"></span>
+            </div>
+            <p class="hero-lead reveal reveal-delay-3" data-i18n="hero_lead">
+              I help businesses grow online through smart marketing, high-quality design, and content that converts — 7+ years of experience in the UAE.
+            </p>
+            <div class="hero-cta reveal reveal-delay-4">
+              <a href="#services" class="btn btn-primary magnetic" data-i18n="hero_cta_services">
+                <i class="fas fa-briefcase"></i> View Services
+              </a>
+              <a href="#contact" class="btn btn-ghost magnetic" data-i18n="hero_cta_contact">
+                <i class="fas fa-envelope"></i> Get in Touch
+              </a>
+            </div>
+            <div class="hero-meta reveal reveal-delay-4">
+              <div class="hero-meta-item">
+                <strong>7+</strong>
+                <span data-i18n="meta_years">Years Exp</span>
+              </div>
+              <div class="hero-meta-item">
+                <strong data-i18n="meta_location_val">UAE</strong>
+                <span data-i18n="meta_location">Based</span>
+              </div>
+              <div class="hero-meta-item">
+                <strong>6</strong>
+                <span data-i18n="meta_services">Services</span>
+              </div>
+              <div class="hero-meta-item">
+                <strong>3</strong>
+                <span data-i18n="meta_langs">Languages</span>
+              </div>
+            </div>
+          </div>
+          <div class="hero-visual reveal">
+            <div class="hero-portrait-glow"></div>
+            <div class="hero-portrait-wrap">
+              <img src="./img/me.jpg" alt="NEDLSALAH — Digital Marketing Specialist" width="1613" height="1613" loading="eager">
+            </div>
+            <div class="hero-float hero-float-1">
+              <i class="fas fa-check-circle"></i>
+              <span data-i18n="float_available">Available for work</span>
+            </div>
+            <div class="hero-float hero-float-2">
+              <i class="fas fa-map-marker-alt"></i>
+              <span data-i18n="float_location">Abu Dhabi, UAE</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="services">
+      <div class="container">
+        <div class="section-header reveal">
+          <div class="section-eyebrow"><i class="fas fa-sparkles"></i> <span data-i18n="svc_eyebrow">What I Do</span></div>
+          <h2 class="section-title" data-i18n-html="svc_title">Services <span>& Solutions</span></h2>
+          <p class="section-desc" data-i18n="svc_desc">Full-service digital expertise — strategy, design, development, and content under one roof.</p>
+        </div>
+        <div class="services-grid">
+          <article class="service-card reveal" data-tilt>
+            <div class="service-num">01</div>
+            <div class="service-icon"><i class="fas fa-bullseye"></i></div>
+            <h3 class="service-title" data-i18n="svc1_title">Digital Marketing & Paid Ads</h3>
+            <p class="service-desc" data-i18n="svc1_desc">Data-driven campaigns that reach the right audience and convert. Full funnel from strategy to reporting.</p>
+            <ul class="service-list">
+              <li data-i18n="svc1_li1">Meta Ads — Facebook & Instagram</li>
+              <li data-i18n="svc1_li2">Google Ads & Search campaigns</li>
+              <li data-i18n="svc1_li3">Content planning & calendar</li>
+              <li data-i18n="svc1_li4">Campaign reporting & optimisation</li>
+            </ul>
+          </article>
+          <article class="service-card reveal reveal-delay-1" data-tilt>
+            <div class="service-num">02</div>
+            <div class="service-icon"><i class="fab fa-wordpress"></i></div>
+            <h3 class="service-title" data-i18n="svc2_title">WordPress Development</h3>
+            <p class="service-desc" data-i18n="svc2_desc">Fast, mobile-friendly websites built to your brand — no template bloat, no compromise.</p>
+            <ul class="service-list">
+              <li data-i18n="svc2_li1">Business & portfolio websites</li>
+              <li data-i18n="svc2_li2">WooCommerce e-commerce stores</li>
+              <li data-i18n="svc2_li3">Landing & lead capture pages</li>
+              <li data-i18n="svc2_li4">SEO-friendly & speed-optimised</li>
+            </ul>
+          </article>
+          <article class="service-card reveal reveal-delay-2" data-tilt>
+            <div class="service-num">03</div>
+            <div class="service-icon"><i class="fas fa-pen-ruler"></i></div>
+            <h3 class="service-title" data-i18n="svc3_title">Graphic Design & Branding</h3>
+            <p class="service-desc" data-i18n="svc3_desc">Visual identity that makes your brand impossible to ignore — consistent, memorable, built to last.</p>
+            <ul class="service-list">
+              <li data-i18n="svc3_li1">Logo & brand identity design</li>
+              <li data-i18n="svc3_li2">Social media graphics & templates</li>
+              <li data-i18n="svc3_li3">Flyers, posters & print</li>
+              <li data-i18n="svc3_li4">Brand guidelines & style systems</li>
+            </ul>
+          </article>
+          <article class="service-card reveal" data-tilt>
+            <div class="service-num">04</div>
+            <div class="service-icon"><i class="fas fa-camera"></i></div>
+            <h3 class="service-title" data-i18n="svc4_title">Photography & Video</h3>
+            <p class="service-desc" data-i18n="svc4_desc">Content that stops the scroll — Reels, product photos, and event content built for social.</p>
+            <ul class="service-list">
+              <li data-i18n="svc4_li1">Instagram Reels & TikTok videos</li>
+              <li data-i18n="svc4_li2">Product & food photography</li>
+              <li data-i18n="svc4_li3">Event & brand photography</li>
+              <li data-i18n="svc4_li4">Video editing & colour grading</li>
+            </ul>
+          </article>
+          <article class="service-card reveal reveal-delay-1" data-tilt>
+            <div class="service-num">05</div>
+            <div class="service-icon"><i class="fas fa-hashtag"></i></div>
+            <h3 class="service-title" data-i18n="svc5_title">Social Media Management</h3>
+            <p class="service-desc" data-i18n="svc5_desc">Consistent, on-brand presence without the hassle. I handle everything so you focus on business.</p>
+            <ul class="service-list">
+              <li data-i18n="svc5_li1">Multi-platform content creation</li>
+              <li data-i18n="svc5_li2">Posting schedules & community</li>
+              <li data-i18n="svc5_li3">Audience growth strategies</li>
+              <li data-i18n="svc5_li4">Monthly performance reports</li>
+            </ul>
+          </article>
+          <article class="service-card reveal reveal-delay-2" data-tilt>
+            <div class="service-num">06</div>
+            <div class="service-icon"><i class="fas fa-pen-fancy"></i></div>
+            <h3 class="service-title" data-i18n="svc6_title">Content & Copywriting</h3>
+            <p class="service-desc" data-i18n="svc6_desc">Words that work. Website copy, captions, and product descriptions that connect and drive action.</p>
+            <ul class="service-list">
+              <li data-i18n="svc6_li1">Website & landing page copy</li>
+              <li data-i18n="svc6_li2">Social media captions</li>
+              <li data-i18n="svc6_li3">Product descriptions</li>
+              <li data-i18n="svc6_li4">Arabic, English & French</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about">
+      <div class="container">
+        <div class="about-grid">
+          <div class="about-visual reveal">
+            <div class="about-img-wrap">
+              <img src="./img/me.jpg" alt="NEDLSALAH portrait" width="1613" height="1613" loading="lazy">
+            </div>
+          </div>
+          <div class="about-content">
+            <div class="section-eyebrow reveal"><i class="fas fa-user"></i> <span data-i18n="about_eyebrow">About Me</span></div>
+            <h2 class="section-title reveal" data-i18n-html="about_title">One Person, <span>Full Service</span></h2>
+            <p class="reveal" data-i18n="about_p1">
+              I'm NEDLSALAH — a Digital Marketing Specialist, WordPress Web Developer, and Graphic Designer based in Abu Dhabi, UAE. With 7+ years of hands-on experience across UAE agencies and corporate brands, I bring the rare combination of strategic marketing thinking and strong creative execution under one roof.
+            </p>
+            <p class="reveal" data-i18n="about_p2">
+              Whether you need a campaign that generates leads, a website that converts visitors, a brand identity that stands out, or content that stops the scroll — I handle it all end-to-end. No waiting on multiple freelancers. No miscommunication.
+            </p>
+            <p class="reveal" data-i18n="about_p3">
+              I've worked with restaurants, retail brands, event agencies and more across the UAE. My approach is simple: understand what you need, deliver high-quality work, and stay focused on results that matter to your business.
+            </p>
+            <div class="about-stats reveal">
+              <div class="about-stat">
+                <strong>7+</strong>
+                <span data-i18n="stat_years">Years Experience</span>
+              </div>
+              <div class="about-stat">
+                <strong data-i18n="stat_uae">UAE</strong>
+                <span data-i18n="stat_based">Based</span>
+              </div>
+              <div class="about-stat">
+                <strong>6</strong>
+                <span data-i18n="stat_services">Core Services</span>
+              </div>
+              <div class="about-stat">
+                <strong>3</strong>
+                <span data-i18n="stat_langs">Languages</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience">
+      <div class="container">
+        <div class="section-header reveal">
+          <div class="section-eyebrow"><i class="fas fa-circle-dot"></i> <span data-i18n="exp_eyebrow">Track Record</span></div>
+          <h2 class="section-title" data-i18n-html="exp_title">Professional <span>Experience</span></h2>
+          <p class="section-desc" data-i18n="exp_desc">A consistent history of results across UAE agencies and corporate environments.</p>
+        </div>
+        <div class="exp-timeline">
+          <div class="exp-item reveal">
+            <span class="exp-dot"></span>
+            <p class="exp-text" data-i18n="exp1">Plan and execute social media strategies across multiple client accounts, producing consistent, brand-aligned content tailored to each audience.</p>
+          </div>
+          <div class="exp-item reveal">
+            <span class="exp-dot"></span>
+            <p class="exp-text" data-i18n="exp2">Create engaging visual content including short-form videos and Reels, handling shooting and editing using mobile-first approaches to maintain authenticity and performance.</p>
+          </div>
+          <div class="exp-item reveal">
+            <span class="exp-dot"></span>
+            <p class="exp-text" data-i18n="exp3">Support and manage paid advertising campaigns (Meta Ads and Google Ads), assisting with campaign setup, audience targeting, creative testing, and ongoing optimization to improve reach and lead quality.</p>
+          </div>
+          <div class="exp-item reveal">
+            <span class="exp-dot"></span>
+            <p class="exp-text" data-i18n="exp4">Collaborate closely with the design team to develop campaign visuals, ensuring alignment with brand identity and marketing objectives.</p>
+          </div>
+          <div class="exp-item reveal">
+            <span class="exp-dot"></span>
+            <p class="exp-text" data-i18n="exp5">Build and maintain WordPress websites and landing pages, focusing on clean design, usability, and mobile responsiveness.</p>
+          </div>
+          <div class="exp-item reveal">
+            <span class="exp-dot"></span>
+            <p class="exp-text" data-i18n="exp6">Work directly with clients to understand requirements and translate ideas into practical marketing outputs across content, ads, and web.</p>
+          </div>
+          <div class="exp-item reveal">
+            <span class="exp-dot"></span>
+            <p class="exp-text" data-i18n="exp7">Ran paid social and Google Ads campaigns, optimising reach and lead quality continuously through data-driven adjustments.</p>
+          </div>
+          <div class="exp-item reveal">
+            <span class="exp-dot"></span>
+            <p class="exp-text" data-i18n="exp8">Led a full brand identity refresh — redesigning logo, establishing visual style systems, and defining tone of voice across touchpoints.</p>
+          </div>
+          <div class="exp-item reveal">
+            <span class="exp-dot"></span>
+            <p class="exp-text" data-i18n="exp9">Improved website SEO through on-page optimisation, steadily increasing organic visibility and inbound traffic over time.</p>
+          </div>
+          <div class="exp-item reveal">
+            <span class="exp-dot"></span>
+            <p class="exp-text" data-i18n="exp10">Delivered end-to-end digital marketing, web design, and branding projects from initial brief through to successful launch.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills">
+      <div class="container">
+        <div class="section-header reveal">
+          <div class="section-eyebrow"><i class="fas fa-layer-group"></i> <span data-i18n="skills_eyebrow">Expertise</span></div>
+          <h2 class="section-title" data-i18n-html="skills_title">The <span>Toolkit</span></h2>
+          <p class="section-desc" data-i18n="skills_desc">Every tool I use to deliver end-to-end digital work at the highest level.</p>
+        </div>
+        <div class="skills-cloud reveal">
+          <span class="skill-pill featured">Meta Ads</span>
+          <span class="skill-pill featured">Google Ads</span>
+          <span class="skill-pill featured">SEO</span>
+          <span class="skill-pill">Google Analytics</span>
+          <span class="skill-pill featured">WordPress</span>
+          <span class="skill-pill">HTML & CSS</span>
+          <span class="skill-pill">WooCommerce</span>
+          <span class="skill-pill">Responsive Design</span>
+          <span class="skill-pill">Instagram & Reels</span>
+          <span class="skill-pill">Facebook</span>
+          <span class="skill-pill">LinkedIn</span>
+          <span class="skill-pill">Photography</span>
+          <span class="skill-pill">Video Editing</span>
+          <span class="skill-pill">Short-Form Video</span>
+          <span class="skill-pill">Photoshop</span>
+          <span class="skill-pill">Illustrator</span>
+          <span class="skill-pill">Lightroom</span>
+          <span class="skill-pill">Canva</span>
+          <span class="skill-pill">Logo & Brand Design</span>
+          <span class="skill-pill">Mailchimp</span>
+          <span class="skill-pill">Hootsuite</span>
+          <span class="skill-pill">ChatGPT & AI Tools</span>
+          <span class="skill-pill">Trello & Notion</span>
+          <span class="skill-pill featured" data-i18n="skill_langs">Arabic · English · French</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- CERTIFICATIONS -->
+    <section id="certifications">
+      <div class="container">
+        <div class="section-header reveal">
+          <div class="section-eyebrow"><i class="fas fa-certificate"></i> <span data-i18n="certs_eyebrow">Credentials</span></div>
+          <h2 class="section-title" data-i18n-html="certs_title">Certifi<span>cations</span></h2>
+          <p class="section-desc" data-i18n="certs_desc">Professional certifications and continuous learning.</p>
+        </div>
+        <div class="certs-grid">
+          <div class="cert-card reveal">
+            <div class="cert-title" data-i18n="cert1_title">Fundamentals of Digital Marketing</div>
+            <div class="cert-meta">Google · 2021</div>
+          </div>
+          <div class="cert-card reveal reveal-delay-1">
+            <div class="cert-title" data-i18n="cert2_title">Front End Web Development Track</div>
+            <div class="cert-meta">Udacity · 2020</div>
+          </div>
+          <div class="cert-card reveal reveal-delay-2">
+            <div class="cert-title" data-i18n="cert3_title">WordPress Site Building</div>
+            <div class="cert-meta">OpenClassrooms · 2020</div>
+          </div>
+          <div class="cert-card reveal">
+            <div class="cert-title" data-i18n="cert4_title">Responsive Website Basics</div>
+            <div class="cert-meta">Coursera · 2019</div>
+          </div>
+          <div class="cert-card reveal reveal-delay-1">
+            <div class="cert-title" data-i18n="cert5_title">Microsoft Office Specialist: Excel</div>
+            <div class="cert-meta">Microsoft · 2019</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="cta" id="contact">
+      <div class="container">
+        <div class="cta-box reveal">
+          <h2 class="cta-title" data-i18n-html="cta_title">Ready to Work <span>Together?</span></h2>
+          <p class="cta-desc" data-i18n="cta_desc">Whether you need a campaign that generates leads, a website that converts, a brand that stands out, or content that performs — I'm available.</p>
+          <a href="mailto:nedlsalah@gmail.com" class="cta-email magnetic">
+            <i class="fas fa-envelope"></i> nedlsalah@gmail.com
+          </a>
+          <div class="cta-actions">
+            <a href="mailto:nedlsalah@gmail.com" class="btn btn-primary magnetic" data-i18n="cta_btn">
+              <i class="fas fa-paper-plane"></i> Send Email
+            </a>
+            <a href="https://www.behance.net/nedlsalah" target="_blank" rel="noopener noreferrer" class="btn btn-ghost magnetic">
+              <i class="fab fa-behance"></i> Behance
+            </a>
+            <a href="https://500px.com/nedlsalah" target="_blank" rel="noopener noreferrer" class="btn btn-ghost magnetic">
+              <i class="fab fa-500px"></i> 500px
+            </a>
+          </div>
+          <div class="cta-tags">
+            <span><i class="fas fa-check"></i> <span data-i18n="tag1">7+ Years Experience</span></span>
+            <span><i class="fas fa-check"></i> <span data-i18n="tag2">UAE-Based</span></span>
+            <span><i class="fas fa-check"></i> <span data-i18n="tag3">End-to-End Service</span></span>
+            <span><i class="fas fa-check"></i> <span data-i18n="tag4">Arabic · English · French</span></span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">NEDL<span>SALAH</span></div>
+        <p class="footer-copy" data-i18n="footer_copy">© 2026 NEDLSALAH — All Rights Reserved</p>
+        <div class="footer-socials">
+          <a href="https://www.behance.net/nedlsalah" target="_blank" rel="noopener noreferrer" aria-label="Behance" title="Behance"><i class="fab fa-behance"></i></a>
+          <a href="https://500px.com/nedlsalah" target="_blank" rel="noopener noreferrer" aria-label="500px" title="500px"><i class="fab fa-500px"></i></a>
+          <a href="mailto:nedlsalah@gmail.com" aria-label="Email" title="Email"><i class="fas fa-envelope"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <button type="button" class="back-top" id="backTop" aria-label="Back to top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <script>
+  /* ═══════════════════════════════════════════════════════════
+     i18n · Theme · Interactions · Motion
+  ═══════════════════════════════════════════════════════════ */
+  const i18n = {
+    en: {
+      logo: 'NEDL<span>SALAH</span>',
+      nav_services: 'Services',
+      nav_about: 'About',
+      nav_experience: 'Experience',
+      nav_skills: 'Skills',
+      nav_certs: 'Credentials',
+      nav_contact: 'Contact',
+      hero_badge: 'Available for Projects',
+      hero_h1: 'Digital Marketing Specialist',
+      hero_lead: 'I help businesses grow online through smart marketing, high-quality design, and content that converts — 7+ years of experience in the UAE.',
+      hero_cta_services: '<i class="fas fa-briefcase"></i> View Services',
+      hero_cta_contact: '<i class="fas fa-envelope"></i> Get in Touch',
+      meta_years: 'Years Exp',
+      meta_location: 'Based',
+      meta_location_val: 'UAE',
+      meta_services: 'Services',
+      meta_langs: 'Languages',
+      float_available: 'Available for work',
+      float_location: 'Abu Dhabi, UAE',
+      svc_eyebrow: 'What I Do',
+      svc_title: 'Services <span>& Solutions</span>',
+      svc_desc: 'Full-service digital expertise — strategy, design, development, and content under one roof.',
+      svc1_title: 'Digital Marketing & Paid Ads',
+      svc1_desc: 'Data-driven campaigns that reach the right audience and convert. Full funnel from strategy to reporting.',
+      svc1_li1: 'Meta Ads — Facebook & Instagram',
+      svc1_li2: 'Google Ads & Search campaigns',
+      svc1_li3: 'Content planning & calendar',
+      svc1_li4: 'Campaign reporting & optimisation',
+      svc2_title: 'WordPress Development',
+      svc2_desc: 'Fast, mobile-friendly websites built to your brand — no template bloat, no compromise.',
+      svc2_li1: 'Business & portfolio websites',
+      svc2_li2: 'WooCommerce e-commerce stores',
+      svc2_li3: 'Landing & lead capture pages',
+      svc2_li4: 'SEO-friendly & speed-optimised',
+      svc3_title: 'Graphic Design & Branding',
+      svc3_desc: 'Visual identity that makes your brand impossible to ignore — consistent, memorable, built to last.',
+      svc3_li1: 'Logo & brand identity design',
+      svc3_li2: 'Social media graphics & templates',
+      svc3_li3: 'Flyers, posters & print',
+      svc3_li4: 'Brand guidelines & style systems',
+      svc4_title: 'Photography & Video',
+      svc4_desc: 'Content that stops the scroll — Reels, product photos, and event content built for social.',
+      svc4_li1: 'Instagram Reels & TikTok videos',
+      svc4_li2: 'Product & food photography',
+      svc4_li3: 'Event & brand photography',
+      svc4_li4: 'Video editing & colour grading',
+      svc5_title: 'Social Media Management',
+      svc5_desc: 'Consistent, on-brand presence without the hassle. I handle everything so you focus on business.',
+      svc5_li1: 'Multi-platform content creation',
+      svc5_li2: 'Posting schedules & community',
+      svc5_li3: 'Audience growth strategies',
+      svc5_li4: 'Monthly performance reports',
+      svc6_title: 'Content & Copywriting',
+      svc6_desc: 'Words that work. Website copy, captions, and product descriptions that connect and drive action.',
+      svc6_li1: 'Website & landing page copy',
+      svc6_li2: 'Social media captions',
+      svc6_li3: 'Product descriptions',
+      svc6_li4: 'Arabic, English & French',
+      about_eyebrow: 'About Me',
+      about_title: 'One Person, <span>Full Service</span>',
+      about_p1: "I'm NEDLSALAH — a Digital Marketing Specialist, WordPress Web Developer, and Graphic Designer based in Abu Dhabi, UAE. With 7+ years of hands-on experience across UAE agencies and corporate brands, I bring the rare combination of strategic marketing thinking and strong creative execution under one roof.",
+      about_p2: 'Whether you need a campaign that generates leads, a website that converts visitors, a brand identity that stands out, or content that stops the scroll — I handle it all end-to-end. No waiting on multiple freelancers. No miscommunication.',
+      about_p3: "I've worked with restaurants, retail brands, event agencies and more across the UAE. My approach is simple: understand what you need, deliver high-quality work, and stay focused on results that matter to your business.",
+      stat_years: 'Years Experience',
+      stat_uae: 'UAE',
+      stat_based: 'Based',
+      stat_services: 'Core Services',
+      stat_langs: 'Languages',
+      exp_eyebrow: 'Track Record',
+      exp_title: 'Professional <span>Experience</span>',
+      exp_desc: 'A consistent history of results across UAE agencies and corporate environments.',
+      exp1: 'Plan and execute social media strategies across multiple client accounts, producing consistent, brand-aligned content tailored to each audience.',
+      exp2: 'Create engaging visual content including short-form videos and Reels, handling shooting and editing using mobile-first approaches to maintain authenticity and performance.',
+      exp3: 'Support and manage paid advertising campaigns (Meta Ads and Google Ads), assisting with campaign setup, audience targeting, creative testing, and ongoing optimization to improve reach and lead quality.',
+      exp4: 'Collaborate closely with the design team to develop campaign visuals, ensuring alignment with brand identity and marketing objectives.',
+      exp5: 'Build and maintain WordPress websites and landing pages, focusing on clean design, usability, and mobile responsiveness.',
+      exp6: 'Work directly with clients to understand requirements and translate ideas into practical marketing outputs across content, ads, and web.',
+      exp7: 'Ran paid social and Google Ads campaigns, optimising reach and lead quality continuously through data-driven adjustments.',
+      exp8: 'Led a full brand identity refresh — redesigning logo, establishing visual style systems, and defining tone of voice across touchpoints.',
+      exp9: 'Improved website SEO through on-page optimisation, steadily increasing organic visibility and inbound traffic over time.',
+      exp10: 'Delivered end-to-end digital marketing, web design, and branding projects from initial brief through to successful launch.',
+      skills_eyebrow: 'Expertise',
+      skills_title: 'The <span>Toolkit</span>',
+      skills_desc: 'Every tool I use to deliver end-to-end digital work at the highest level.',
+      skill_langs: 'Arabic · English · French',
+      certs_eyebrow: 'Credentials',
+      certs_title: 'Certifi<span>cations</span>',
+      certs_desc: 'Professional certifications and continuous learning.',
+      cert1_title: 'Fundamentals of Digital Marketing',
+      cert2_title: 'Front End Web Development Track',
+      cert3_title: 'WordPress Site Building',
+      cert4_title: 'Responsive Website Basics',
+      cert5_title: 'Microsoft Office Specialist: Excel',
+      cta_title: 'Ready to Work <span>Together?</span>',
+      cta_desc: "Whether you need a campaign that generates leads, a website that converts, a brand that stands out, or content that performs — I'm available.",
+      cta_btn: '<i class="fas fa-paper-plane"></i> Send Email',
+      tag1: '7+ Years Experience',
+      tag2: 'UAE-Based',
+      tag3: 'End-to-End Service',
+      tag4: 'Arabic · English · French',
+      footer_copy: '© 2026 NEDLSALAH — All Rights Reserved',
+      phrases: [
+        'Digital Marketing Specialist',
+        'WordPress Web Developer',
+        'Graphic & Brand Designer',
+        'Social Media Manager',
+        'Photographer & Video Creator'
+      ]
+    },
+    ar: {
+      logo: 'NEDL<span>SALAH</span>',
+      nav_services: 'خدمات',
+      nav_about: 'نبذة عني',
+      nav_experience: 'الخبرة',
+      nav_skills: 'المهارات',
+      nav_certs: 'الشهادات',
+      nav_contact: 'تواصل',
+      hero_badge: 'متاح للمشاريع',
+      hero_h1: 'أخصائي التسويق الرقمي',
+      hero_lead: 'أساعد الشركات على النمو عبر الإنترنت من خلال التسويق الذكي والتصميم عالي الجودة والمحتوى الذي يحقق النتائج، بخبرة تتجاوز 7 سنوات في الإمارات.',
+      hero_cta_services: '<i class="fas fa-briefcase"></i> عرض الخدمات',
+      hero_cta_contact: '<i class="fas fa-envelope"></i> تواصل معي',
+      meta_years: 'سنوات خبرة',
+      meta_location: 'مقيم في',
+      meta_location_val: 'الإمارات',
+      meta_services: 'خدمات',
+      meta_langs: 'لغات',
+      float_available: 'متاح للعمل',
+      float_location: 'أبوظبي، الإمارات',
+      svc_eyebrow: 'ما أقدمه',
+      svc_title: 'الخدمات <span>والحلول</span>',
+      svc_desc: 'خبرة رقمية متكاملة تشمل الاستراتيجية والتصميم والتطوير والمحتوى ضمن خدمة واحدة.',
+      svc1_title: 'التسويق الرقمي والإعلانات المدفوعة',
+      svc1_desc: 'حملات تعتمد على البيانات للوصول إلى الجمهور المناسب وتحقيق النتائج، من الاستراتيجية وحتى التقارير.',
+      svc1_li1: 'Meta Ads — Facebook و Instagram',
+      svc1_li2: 'Google Ads وحملات البحث',
+      svc1_li3: 'تخطيط المحتوى والجدول التحريري',
+      svc1_li4: 'تقارير الحملات والتحسين المستمر',
+      svc2_title: 'تطوير مواقع WordPress',
+      svc2_desc: 'مواقع سريعة ومتوافقة مع الجوال مصممة وفق هوية علامتك، بدون تعقيد أو إضافات غير ضرورية.',
+      svc2_li1: 'مواقع الشركات والمواقع الشخصية',
+      svc2_li2: 'متاجر التجارة الإلكترونية عبر WooCommerce',
+      svc2_li3: 'صفحات الهبوط وجمع العملاء المحتملين',
+      svc2_li4: 'متوافقة مع SEO ومحسّنة للسرعة',
+      svc3_title: 'التصميم الجرافيكي وبناء الهوية',
+      svc3_desc: 'هوية بصرية واضحة ومميزة ومتناسقة، مصممة لتبقى في الذاكرة.',
+      svc3_li1: 'تصميم الشعارات والهوية البصرية',
+      svc3_li2: 'تصاميم وقوالب وسائل التواصل الاجتماعي',
+      svc3_li3: 'المنشورات والملصقات والمطبوعات',
+      svc3_li4: 'دليل الهوية والنظام البصري',
+      svc4_title: 'التصوير الفوتوغرافي والفيديو',
+      svc4_desc: 'محتوى يلفت الانتباه على وسائل التواصل، من Reels وصور المنتجات إلى تغطية الفعاليات.',
+      svc4_li1: 'فيديوهات Instagram Reels و TikTok',
+      svc4_li2: 'تصوير المنتجات والأطعمة',
+      svc4_li3: 'تصوير الفعاليات والعلامات التجارية',
+      svc4_li4: 'مونتاج الفيديو وتصحيح الألوان',
+      svc5_title: 'إدارة وسائل التواصل الاجتماعي',
+      svc5_desc: 'حضور رقمي متناسق مع الهوية بدون عناء. أتولى التفاصيل لتتمكن من التركيز على عملك.',
+      svc5_li1: 'إنشاء محتوى لمختلف المنصات',
+      svc5_li2: 'جداول النشر وإدارة المجتمع',
+      svc5_li3: 'استراتيجيات نمو الجمهور',
+      svc5_li4: 'تقارير الأداء الشهرية',
+      svc6_title: 'المحتوى وكتابة النصوص',
+      svc6_desc: 'نصوص تحقق الهدف، من محتوى المواقع والتعليقات إلى أوصاف المنتجات التي تربط الجمهور بالعلامة وتحفّز على اتخاذ القرار.',
+      svc6_li1: 'محتوى المواقع وصفحات الهبوط',
+      svc6_li2: 'كتابة منشورات وسائل التواصل',
+      svc6_li3: 'أوصاف المنتجات',
+      svc6_li4: 'العربية، الإنجليزية والفرنسية',
+      about_eyebrow: 'نبذة عني',
+      about_title: 'شخص واحد، <span>خدمة متكاملة</span>',
+      about_p1: 'أنا NEDLSALAH، متخصص في التسويق الرقمي ومطور مواقع WordPress ومصمم جرافيك مقيم في أبوظبي، الإمارات. بخبرة عملية تتجاوز 7 سنوات مع وكالات وعلامات تجارية داخل الإمارات، أجمع بين التفكير التسويقي الاستراتيجي والتنفيذ الإبداعي القوي ضمن خدمة واحدة.',
+      about_p2: 'سواء كنت تحتاج إلى حملة تجذب العملاء المحتملين، أو موقع يحول الزوار إلى عملاء، أو هوية تميز علامتك، أو محتوى يلفت الانتباه، أتولى العمل من البداية إلى النهاية دون الحاجة إلى عدة مستقلين أو الوقوع في مشاكل سوء التواصل.',
+      about_p3: 'عملت مع مطاعم وعلامات تجارية في قطاع التجزئة ووكالات فعاليات وغيرها في الإمارات. منهجي بسيط: أفهم ما تحتاجه، أقدم عملاً بجودة عالية، وأركز على النتائج التي تهم عملك.',
+      stat_years: 'سنوات خبرة',
+      stat_uae: 'الإمارات',
+      stat_based: 'مقيم في',
+      stat_services: 'خدمات أساسية',
+      stat_langs: 'لغات',
+      exp_eyebrow: 'سجل الإنجازات',
+      exp_title: 'الخبرة <span>المهنية</span>',
+      exp_desc: 'سجل ثابت من النتائج عبر وكالات وبيئات شركات داخل الإمارات.',
+      exp1: 'تخطيط وتنفيذ استراتيجيات وسائل التواصل عبر حسابات عملاء متعددة، مع إنتاج محتوى متسق ومتوافق مع الهوية ومخصص لكل جمهور.',
+      exp2: 'إنشاء محتوى بصري جذاب يشمل الفيديوهات القصيرة وReels، مع التصوير والمونتاج بأساليب مناسبة للجوال للحفاظ على الأصالة والأداء.',
+      exp3: 'دعم وإدارة حملات الإعلانات المدفوعة (Meta Ads وGoogle Ads)، والمساعدة في إعداد الحملات واستهداف الجمهور واختبار الإبداعات والتحسين المستمر لرفع الوصول وجودة العملاء المحتملين.',
+      exp4: 'التعاون الوثيق مع فريق التصميم لتطوير المرئيات الخاصة بالحملات، مع ضمان التوافق مع هوية العلامة وأهداف التسويق.',
+      exp5: 'بناء وصيانة مواقع WordPress وصفحات الهبوط، مع التركيز على التصميم النظيف وسهولة الاستخدام والتوافق مع الجوال.',
+      exp6: 'العمل مباشرة مع العملاء لفهم المتطلبات وتحويل الأفكار إلى مخرجات تسويقية عملية تشمل المحتوى والإعلانات والمواقع.',
+      exp7: 'أدرت حملات الإعلانات المدفوعة عبر وسائل التواصل وGoogle Ads، مع تحسين الوصول وجودة العملاء المحتملين باستمرار اعتمادًا على البيانات.',
+      exp8: 'قدت عملية تطوير كاملة للهوية البصرية، شملت إعادة تصميم الشعار ووضع النظام البصري وتحديد نبرة التواصل عبر مختلف نقاط الاتصال.',
+      exp9: 'حسّنت SEO للمواقع من خلال تحسين العناصر الداخلية للصفحات، مما ساعد على زيادة الظهور العضوي وحركة الزيارات بمرور الوقت.',
+      exp10: 'نفذت مشاريع متكاملة في التسويق الرقمي وتصميم المواقع وبناء الهوية من مرحلة فهم المتطلبات وحتى الإطلاق الناجح.',
+      skills_eyebrow: 'الخبرات',
+      skills_title: 'أدوات <span>العمل</span>',
+      skills_desc: 'مجموعة الأدوات التي أستخدمها لتقديم أعمال رقمية متكاملة بمستوى عالٍ.',
+      skill_langs: 'العربية · الإنجليزية · الفرنسية',
+      certs_eyebrow: 'الشهادات',
+      certs_title: 'الشهاد<span>ات</span>',
+      certs_desc: 'شهادات مهنية وتعلم مستمر.',
+      cert1_title: 'أساسيات التسويق الرقمي',
+      cert2_title: 'مسار تطوير واجهات الويب',
+      cert3_title: 'بناء مواقع WordPress',
+      cert4_title: 'أساسيات المواقع المتجاوبة',
+      cert5_title: 'Microsoft Office Specialist: Excel',
+      cta_title: 'هل أنت مستعد للعمل <span>معًا؟</span>',
+      cta_desc: 'سواء كنت تحتاج إلى حملة تجذب العملاء، أو موقعًا يحول الزوار، أو علامة تجارية مميزة، أو محتوى يحقق النتائج، فأنا متاح لتنفيذ مشروعك.',
+      cta_btn: '<i class="fas fa-paper-plane"></i> إرسال بريد إلكتروني',
+      tag1: 'أكثر من 7 سنوات خبرة',
+      tag2: 'مقيم في الإمارات',
+      tag3: 'خدمة متكاملة من البداية إلى النهاية',
+      tag4: 'العربية · الإنجليزية · الفرنسية',
+      footer_copy: '© 2026 NEDLSALAH — جميع الحقوق محفوظة',
+      phrases: [
+        'أخصائي التسويق الرقمي',
+        'مطور مواقع WordPress',
+        'مصمم جرافيك وهوية',
+        'مدير وسائل التواصل',
+        'مصور ومنشئ فيديو'
+      ]
+    }
+  };
+
+  let currentLang = localStorage.getItem('site-lang') || 'en';
+  let currentTheme = localStorage.getItem('site-theme') || (window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark');
+
+  // Apply theme early
+  document.documentElement.setAttribute('data-theme', currentTheme);
+
+  function setLanguage(lang) {
+    currentLang = lang;
+    localStorage.setItem('site-lang', lang);
+    const html = document.documentElement;
+    html.setAttribute('lang', lang);
+    html.setAttribute('dir', lang === 'ar' ? 'rtl' : 'ltr');
+    const dict = i18n[lang];
+    document.querySelectorAll('[data-i18n]').forEach(el => {
+      const key = el.getAttribute('data-i18n');
+      if (dict[key] !== undefined) el.innerHTML = dict[key];
+    });
+    document.querySelectorAll('[data-i18n-html]').forEach(el => {
+      const key = el.getAttribute('data-i18n-html');
+      if (dict[key] !== undefined) el.innerHTML = dict[key];
+    });
+    // Lang switcher visual
+    const enEl = document.querySelector('.lang-en');
+    const arEl = document.querySelector('.lang-ar');
+    if (lang === 'en') {
+      enEl.classList.add('active-lang');
+      arEl.classList.remove('active-lang');
+    } else {
+      arEl.classList.add('active-lang');
+      enEl.classList.remove('active-lang');
+    }
+    // Restart typing with new phrases
+    if (window._typeRestart) window._typeRestart();
+  }
+
+  function setTheme(theme) {
+    currentTheme = theme;
+    localStorage.setItem('site-theme', theme);
+    document.documentElement.setAttribute('data-theme', theme);
+    const icon = document.getElementById('themeIcon');
+    if (icon) {
+      icon.className = theme === 'dark' ? 'fas fa-sun' : 'fas fa-moon';
+    }
+    const btn = document.getElementById('themeToggle');
+    if (btn) {
+      btn.setAttribute('aria-label', theme === 'dark' ? 'Switch to light theme' : 'Switch to dark theme');
+      btn.title = theme === 'dark' ? 'Light mode' : 'Dark mode';
+    }
+  }
+
+  // Init language & theme
+  setLanguage(currentLang);
+  setTheme(currentTheme);
+
+  document.getElementById('langToggle').addEventListener('click', () => {
+    setLanguage(currentLang === 'en' ? 'ar' : 'en');
+  });
+  document.getElementById('themeToggle').addEventListener('click', () => {
+    setTheme(currentTheme === 'dark' ? 'light' : 'dark');
+  });
+
+  // Typing effect
+  (function typing() {
+    const el = document.getElementById('typedText');
+    let phraseIndex = 0, charIndex = 0, isDeleting = false, timeout;
+    function tick() {
+      const phrases = i18n[currentLang].phrases;
+      const current = phrases[phraseIndex];
+      if (isDeleting) {
+        el.textContent = current.substring(0, charIndex - 1);
+        charIndex--;
+      } else {
+        el.textContent = current.substring(0, charIndex + 1);
+        charIndex++;
+      }
+      let speed = isDeleting ? 40 : 90;
+      if (!isDeleting && charIndex === current.length) {
+        speed = 2200;
+        isDeleting = true;
+      } else if (isDeleting && charIndex === 0) {
+        isDeleting = false;
+        phraseIndex = (phraseIndex + 1) % phrases.length;
+        speed = 400;
+      }
+      timeout = setTimeout(tick, speed);
+    }
+    window._typeRestart = () => {
+      clearTimeout(timeout);
+      phraseIndex = 0; charIndex = 0; isDeleting = false;
+      el.textContent = '';
+      tick();
+    };
+    tick();
+  })();
+
+  // Mobile menu
+  const hamburger = document.getElementById('hamburger');
+  const mobileMenu = document.getElementById('mobileMenu');
+  hamburger.addEventListener('click', () => {
+    const open = mobileMenu.classList.toggle('open');
+    hamburger.classList.toggle('active', open);
+    hamburger.setAttribute('aria-expanded', open);
+    mobileMenu.setAttribute('aria-hidden', !open);
+    document.body.style.overflow = open ? 'hidden' : '';
+  });
+  mobileMenu.querySelectorAll('a').forEach(a => {
+    a.addEventListener('click', () => {
+      mobileMenu.classList.remove('open');
+      hamburger.classList.remove('active');
+      hamburger.setAttribute('aria-expanded', 'false');
+      mobileMenu.setAttribute('aria-hidden', 'true');
+      document.body.style.overflow = '';
+    });
+  });
+
+  // Scroll progress + back top + section nav
+  const progress = document.getElementById('scrollProgress');
+  const backTop = document.getElementById('backTop');
+  const sectionLinks = document.querySelectorAll('.section-nav a');
+  const sections = ['hero','services','about','experience','skills','certifications','contact'];
+
+  function onScroll() {
+    const scrollTop = window.scrollY;
+    const docH = document.documentElement.scrollHeight - window.innerHeight;
+    const pct = docH > 0 ? (scrollTop / docH) * 100 : 0;
+    progress.style.width = pct + '%';
+    if (scrollTop > 500) backTop.classList.add('visible');
+    else backTop.classList.remove('visible');
+
+    // Active section
+    let current = 'hero';
+    for (const id of sections) {
+      const el = document.getElementById(id);
+      if (el && el.getBoundingClientRect().top <= 120) current = id;
+    }
+    sectionLinks.forEach(a => {
+      a.classList.toggle('active', a.dataset.section === current);
+    });
+    // Nav links active
+    document.querySelectorAll('.nav-links a').forEach(a => {
+      const href = a.getAttribute('href').slice(1);
+      a.classList.toggle('active', href === current);
+    });
+  }
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+  backTop.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+
+  // Reveal on scroll
+  const reveals = document.querySelectorAll('.reveal');
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        e.target.classList.add('visible');
+        io.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+  reveals.forEach(el => io.observe(el));
+
+  // Custom cursor
+  const isTouch = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
+  if (isTouch) document.body.classList.add('touch-device');
+  else {
+    const dot = document.getElementById('cursorDot');
+    const ring = document.getElementById('cursorRing');
+    let mx = 0, my = 0, rx = 0, ry = 0;
+    document.addEventListener('mousemove', e => {
+      mx = e.clientX; my = e.clientY;
+      dot.style.left = mx + 'px';
+      dot.style.top = my + 'px';
+    });
+    function animRing() {
+      rx += (mx - rx) * 0.18;
+      ry += (my - ry) * 0.18;
+      ring.style.left = rx + 'px';
+      ring.style.top = ry + 'px';
+      requestAnimationFrame(animRing);
+    }
+    animRing();
+    document.querySelectorAll('a, button, .service-card, .skill-pill, .cert-card').forEach(el => {
+      el.addEventListener('mouseenter', () => ring.classList.add('hover'));
+      el.addEventListener('mouseleave', () => ring.classList.remove('hover'));
+    });
+  }
+
+  // Mouse light on service cards
+  document.querySelectorAll('.service-card').forEach(card => {
+    card.addEventListener('mousemove', e => {
+      const r = card.getBoundingClientRect();
+      card.style.setProperty('--mouse-x', (e.clientX - r.left) + 'px');
+      card.style.setProperty('--mouse-y', (e.clientY - r.top) + 'px');
+    });
+  });
+
+  // Magnetic buttons
+  document.querySelectorAll('.magnetic').forEach(btn => {
+    btn.addEventListener('mousemove', e => {
+      const r = btn.getBoundingClientRect();
+      const x = e.clientX - r.left - r.width / 2;
+      const y = e.clientY - r.top - r.height / 2;
+      btn.style.transform = `translate(${x * 0.18}px, ${y * 0.18}px)`;
+    });
+    btn.addEventListener('mouseleave', () => {
+      btn.style.transform = '';
+    });
+  });
+
+  // Subtle 3D tilt on cards (desktop)
+  if (!isTouch) {
+    document.querySelectorAll('[data-tilt]').forEach(card => {
+      card.addEventListener('mousemove', e => {
+        const r = card.getBoundingClientRect();
+        const x = (e.clientX - r.left) / r.width - 0.5;
+        const y = (e.clientY - r.top) / r.height - 0.5;
+        card.style.transform = `perspective(800px) rotateY(${x * 6}deg) rotateX(${-y * 6}deg) translateY(-4px)`;
+      });
+      card.addEventListener('mouseleave', () => {
+        card.style.transform = '';
+      });
+    });
+  }
+
+  // GSAP subtle hero orbs (if available)
+  if (typeof gsap !== 'undefined') {
+    gsap.to('.hero-orb-1', { x: 30, y: -20, duration: 8, repeat: -1, yoyo: true, ease: 'sine.inOut' });
+    gsap.to('.hero-orb-2', { x: -25, y: 15, duration: 10, repeat: -1, yoyo: true, ease: 'sine.inOut' });
+  }
+  </script>
 </body>
 </html>
-
