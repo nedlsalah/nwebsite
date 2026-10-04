@@ -16,10 +16,10 @@
 <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon/favicon-16x16.png">
 <link rel="manifest" href="./img/favicon/site.webmanifest">
-<script>(function(){var d=document.documentElement,g=function(k){try{return localStorage.getItem(k)}catch(e){return null}},t=g("site-theme"),l=g("site-lang"),m=g("site-motion");
+<script>(function(){var d=document.documentElement,g=function(k){try{return localStorage.getItem(k)}catch(e){return null}},t=g("site-theme"),l=g("site-lang"),m=g("site-motion-v2"),RESPECT_OS_REDUCED_MOTION=false;
 if(t!=="light"&&t!=="dark")t=matchMedia("(prefers-color-scheme: light)").matches?"light":"dark";d.dataset.theme=t;
 if(l==="ar"){d.lang="ar";d.dir="rtl"}
-if(m==="on"||(m!=="off"&&!matchMedia("(prefers-reduced-motion: reduce)").matches))d.classList.add("fx");
+if(m==="on"||(m!=="off"&&!(RESPECT_OS_REDUCED_MOTION&&matchMedia("(prefers-reduced-motion: reduce)").matches)))d.classList.add("fx");
 setTimeout(function(){if(!window.__ok)d.classList.add("is-ready","rv-all")},3000)})();</script>
 <style>
 @font-face{font-family:"Bricolage Grotesque";src:url(./fonts/display.woff2) format("woff2");font-weight:200 800;font-display:swap}
@@ -957,7 +957,7 @@ html.lenis.lenis-stopped{overflow:hidden}
   /* ── Motion switch: overrides the OS setting when the visitor asks ── */
   const mt = $('#motionToggle');
   mt.setAttribute('aria-pressed', fx);
-  mt.addEventListener('click', () => { store.set('site-motion', fx ? 'off' : 'on'); location.reload(); });
+  mt.addEventListener('click', () => { store.set('site-motion-v2', fx ? 'off' : 'on'); location.reload(); });
   refreshA11y();
   window.__ok = true;
 })();
